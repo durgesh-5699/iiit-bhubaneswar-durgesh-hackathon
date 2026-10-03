@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "T005",
+    "source": "twitter",
+    "user": "@trader_5722",
+    "created_at": "2026-09-01T02:41:41.460Z",
+    "likes": 156,
+    "retweets": 102,
+    "text": "$GS deal is accretive, love it 💪 #stocks",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.64,
+    "gold_impact": 6
+  },
+  {
+    "id": "T063",
+    "source": "twitter",
+    "user": "@trader_5198",
+    "created_at": "2026-09-01T04:46:33.559Z",
+    "likes": 147,
+    "retweets": 34,
+    "text": "Amazon event next month, anyone going? #markets",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.06,
+    "gold_impact": 1
+  },
+  {
+    "id": "T044",
+    "source": "twitter",
+    "user": "@trader_3832",
+    "created_at": "2026-09-01T08:04:59.158Z",
+    "likes": 765,
+    "retweets": 174,
+    "text": "dumping $MSFT, this quarter was awful",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.53,
+    "gold_impact": 5
+  },
+  {
+    "id": "T064",
+    "source": "twitter",
+    "user": "@trader_6612",
+    "created_at": "2026-09-02T00:12:59.096Z",
+    "likes": 120,
+    "retweets": 0,
+    "text": "$PFE debt call tomorrow #finance",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.09,
+    "gold_impact": 2
+  },
+  {
+    "id": "T053",
+    "source": "twitter",
+    "user": "@trader_8805",
+    "created_at": "2026-09-02T00:52:16.363Z",
+    "likes": 133,
+    "retweets": 29,
+    "text": "waiting on $BAC results, no position yet #investing",
+    "tickers": [
+      "BAC"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.04,
+    "gold_impact": 2
+  },
+  {
+    "id": "T034",
+    "source": "twitter",
+    "user": "@trader_2888",
+    "created_at": "2026-09-02T01:57:43.662Z",
+    "likes": 564,
+    "retweets": 137,
+    "text": "$TSLA event next month, anyone going? #markets",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.06,
+    "gold_impact": 1
+  },
+  {
+    "id": "T120",
+    "source": "twitter",
+    "user": "@trader_5904",
+    "created_at": "2026-09-02T04:04:31.443Z",
+    "likes": 406,
+    "retweets": 133,
+    "text": "CPI cooler than expected! rate cut hopes alive 📈 #trading",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.89,
+    "gold_impact": 5
+  },
+  {
+    "id": "T110",
+    "source": "twitter",
+    "user": "@trader_6497",
+    "created_at": "2026-09-02T08:10:10.066Z",
+    "likes": 179,
+    "retweets": 31,
+    "text": "dumping Johnson & Johnson, this quarter was awful #stocks",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.72,
+    "gold_impact": 5
+  },
+  {
+    "id": "T106",
+    "source": "twitter",
+    "user": "@trader_7276",
+    "created_at": "2026-09-02T09:17:33.586Z",
+    "likes": 489,
+    "retweets": 88,
+    "text": "$NVDA just dropped something huge, bullish #trading",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.54,
+    "gold_impact": 5
+  },
+  {
+    "id": "T029",
+    "source": "twitter",
+    "user": "@trader_5416",
+    "created_at": "2026-09-03T06:44:42.043Z",
+    "likes": 233,
+    "retweets": 159,
+    "text": "$MSFT deal is accretive, love it 💪 #finance",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.49,
+    "gold_impact": 5
+  },
+  {
+    "id": "T004",
+    "source": "twitter",
+    "user": "@trader_6899",
+    "created_at": "2026-09-03T07:50:54.522Z",
+    "likes": 415,
+    "retweets": 175,
+    "text": "$PFE just dropped something huge, bullish #stocks",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.63,
+    "gold_impact": 4
+  },
+  {
+    "id": "T093",
+    "source": "twitter",
+    "user": "@trader_1046",
+    "created_at": "2026-09-04T02:22:11.822Z",
+    "likes": 283,
+    "retweets": 39,
+    "text": "new $WMT launch looks amazing, orders flying 🔥",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.77,
+    "gold_impact": 3
+  },
+  {
+    "id": "T114",
+    "source": "twitter",
+    "user": "@trader_4325",
+    "created_at": "2026-09-04T07:24:46.392Z",
+    "likes": 478,
+    "retweets": 170,
+    "text": "tensions rising again, de-risking my portfolio #stocks",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.68,
+    "gold_impact": 7
+  },
+  {
+    "id": "T073",
+    "source": "twitter",
+    "user": "@trader_5550",
+    "created_at": "2026-09-04T11:18:41.911Z",
+    "likes": 342,
+    "retweets": 2,
+    "text": "waiting on $PFE results, no position yet #finance",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.12,
+    "gold_impact": 2
+  },
+  {
+    "id": "T096",
+    "source": "twitter",
+    "user": "@trader_7896",
+    "created_at": "2026-09-04T17:50:23.892Z",
+    "likes": 3,
+    "retweets": 91,
+    "text": "tensions rising again, de-risking my portfolio #investing",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.71,
+    "gold_impact": 7
+  },
+  {
+    "id": "T013",
+    "source": "twitter",
+    "user": "@trader_4211",
+    "created_at": "2026-09-04T21:13:06.640Z",
+    "likes": 596,
+    "retweets": 34,
+    "text": "Johnson & Johnson says it's cooperating with regulators",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.05,
+    "gold_impact": 2
+  },
+  {
+    "id": "T100",
+    "source": "twitter",
+    "user": "@trader_1807",
+    "created_at": "2026-09-04T22:08:11.594Z",
+    "likes": 654,
+    "retweets": 184,
+    "text": "$GS bond offering coming this week #trading",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.08,
+    "gold_impact": 2
+  },
+  {
+    "id": "T052",
+    "source": "twitter",
+    "user": "@trader_4053",
+    "created_at": "2026-09-04T23:39:19.201Z",
+    "likes": 218,
+    "retweets": 186,
+    "text": "$GS downgraded, debt load worrying me, selling #stocks",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.64,
+    "gold_impact": 7
+  },
+  {
+    "id": "T012",
+    "source": "twitter",
+    "user": "@trader_1141",
+    "created_at": "2026-09-05T00:31:54.909Z",
+    "likes": 666,
+    "retweets": 22,
+    "text": "leaders meeting next week, watching headlines #markets",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.07,
+    "gold_impact": 2
+  },
+  {
+    "id": "T051",
+    "source": "twitter",
+    "user": "@trader_9014",
+    "created_at": "2026-09-05T03:40:10.476Z",
+    "likes": 108,
+    "retweets": 118,
+    "text": "$WMT deal collapsed after regulators pushed back, bearish #stocks",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.61,
+    "gold_impact": 5
+  },
+  {
+    "id": "T102",
+    "source": "twitter",
+    "user": "@trader_1252",
+    "created_at": "2026-09-05T07:09:45.396Z",
+    "likes": 767,
+    "retweets": 105,
+    "text": "CPI data tomorrow, who's ready? #macro #investing",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.01,
+    "gold_impact": 2
+  },
+  {
+    "id": "T058",
+    "source": "twitter",
+    "user": "@trader_8114",
+    "created_at": "2026-09-05T07:49:11.448Z",
+    "likes": 385,
+    "retweets": 130,
+    "text": "dumping $TSLA, this quarter was awful",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.63,
+    "gold_impact": 5
+  },
+  {
+    "id": "T067",
+    "source": "twitter",
+    "user": "@trader_4278",
+    "created_at": "2026-09-05T07:51:13.734Z",
+    "likes": 606,
+    "retweets": 32,
+    "text": "Johnson & Johnson wins approval, path is clear ✅ #investing",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.85,
+    "gold_impact": 5
+  },
+  {
+    "id": "T066",
+    "source": "twitter",
+    "user": "@trader_3037",
+    "created_at": "2026-09-05T09:56:07.221Z",
+    "likes": 275,
+    "retweets": 47,
+    "text": "Oil spiking, markets bleeding. geopolitics is scary rn #markets #stocks",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.67,
+    "gold_impact": 9
+  },
+  {
+    "id": "T115",
+    "source": "twitter",
+    "user": "@trader_7175",
+    "created_at": "2026-09-05T18:05:48.650Z",
+    "likes": 466,
+    "retweets": 6,
+    "text": "$WMT just dropped something huge, bullish",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.48,
+    "gold_impact": 5
+  },
+  {
+    "id": "T048",
+    "source": "twitter",
+    "user": "@trader_1824",
+    "created_at": "2026-09-06T18:46:50.473Z",
+    "likes": 430,
+    "retweets": 108,
+    "text": "jobs report beat, soft landing is real? #macro",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.84,
+    "gold_impact": 6
+  },
+  {
+    "id": "T072",
+    "source": "twitter",
+    "user": "@trader_2792",
+    "created_at": "2026-09-06T22:09:10.204Z",
+    "likes": 362,
+    "retweets": 189,
+    "text": "unemployment ticking up, recession vibes 📉 #markets",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.79,
+    "gold_impact": 7
+  },
+  {
+    "id": "T080",
+    "source": "twitter",
+    "user": "@trader_4707",
+    "created_at": "2026-09-06T23:33:50.294Z",
+    "likes": 504,
+    "retweets": 41,
+    "text": "heard $TSLA has something coming up",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.11,
+    "gold_impact": 1
+  },
+  {
+    "id": "T047",
+    "source": "twitter",
+    "user": "@trader_2184",
+    "created_at": "2026-09-07T04:18:31.068Z",
+    "likes": 261,
+    "retweets": 94,
+    "text": "$GOOGL event next month, anyone going? #trading",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.11,
+    "gold_impact": 1
+  },
+  {
+    "id": "T023",
+    "source": "twitter",
+    "user": "@trader_5405",
+    "created_at": "2026-09-07T05:14:35.675Z",
+    "likes": 715,
+    "retweets": 160,
+    "text": "$MSFT product delayed again... disappointing #markets",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.75,
+    "gold_impact": 5
+  },
+  {
+    "id": "T037",
+    "source": "twitter",
+    "user": "@trader_4860",
+    "created_at": "2026-09-07T06:20:51.861Z",
+    "likes": 197,
+    "retweets": 168,
+    "text": "antitrust probe on $BAC, this could get ugly ⚠️ #trading",
+    "tickers": [
+      "BAC"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.64,
+    "gold_impact": 6
+  },
+  {
+    "id": "T011",
+    "source": "twitter",
+    "user": "@trader_8923",
+    "created_at": "2026-09-08T03:44:35.647Z",
+    "likes": 413,
+    "retweets": 148,
+    "text": "$JPM says it's cooperating with regulators",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.01,
+    "gold_impact": 2
+  },
+  {
+    "id": "T007",
+    "source": "twitter",
+    "user": "@trader_2493",
+    "created_at": "2026-09-08T05:03:04.802Z",
+    "likes": 225,
+    "retweets": 190,
+    "text": "Tesla bond spreads blowing out ⚠️ stay careful #markets",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.87,
+    "gold_impact": 7
+  },
+  {
+    "id": "T084",
+    "source": "twitter",
+    "user": "@trader_8291",
+    "created_at": "2026-09-08T08:47:29.505Z",
+    "likes": 649,
+    "retweets": 119,
+    "text": "tensions rising again, de-risking my portfolio #finance",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.49,
+    "gold_impact": 9
+  },
+  {
+    "id": "T082",
+    "source": "twitter",
+    "user": "@trader_6640",
+    "created_at": "2026-09-08T14:21:22.491Z",
+    "likes": 128,
+    "retweets": 101,
+    "text": "$GOOGL bond spreads blowing out ⚠️ stay careful #stocks",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.56,
+    "gold_impact": 8
+  },
+  {
+    "id": "T038",
+    "source": "twitter",
+    "user": "@trader_9847",
+    "created_at": "2026-09-09T14:56:52.989Z",
+    "likes": 260,
+    "retweets": 175,
+    "text": "$XOM bond spreads blowing out ⚠️ stay careful",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.47,
+    "gold_impact": 7
+  },
+  {
+    "id": "T069",
+    "source": "twitter",
+    "user": "@trader_9976",
+    "created_at": "2026-09-09T15:56:50.047Z",
+    "likes": 471,
+    "retweets": 152,
+    "text": "overpaying for that acquisition, $MSFT is a sell for me #investing",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.78,
+    "gold_impact": 7
+  },
+  {
+    "id": "T024",
+    "source": "twitter",
+    "user": "@trader_8090",
+    "created_at": "2026-09-10T19:45:13.833Z",
+    "likes": 702,
+    "retweets": 19,
+    "text": "ceasefire news! markets ripping 🚀 #stocks #investing",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.86,
+    "gold_impact": 9
+  },
+  {
+    "id": "T062",
+    "source": "twitter",
+    "user": "@trader_5898",
+    "created_at": "2026-09-11T06:55:09.934Z",
+    "likes": 624,
+    "retweets": 150,
+    "text": "$MSFT buying a rival?! smart move, bullish #finance",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.48,
+    "gold_impact": 5
+  },
+  {
+    "id": "T070",
+    "source": "twitter",
+    "user": "@trader_1407",
+    "created_at": "2026-09-11T13:33:31.384Z",
+    "likes": 117,
+    "retweets": 107,
+    "text": "$GOOGL just dropped something huge, bullish #investing",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.67,
+    "gold_impact": 3
+  },
+  {
+    "id": "T103",
+    "source": "twitter",
+    "user": "@trader_2539",
+    "created_at": "2026-09-12T08:21:39.984Z",
+    "likes": 713,
+    "retweets": 80,
+    "text": "$NVDA buying a rival?! smart move, bullish #investing",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.66,
+    "gold_impact": 7
+  },
+  {
+    "id": "T049",
+    "source": "twitter",
+    "user": "@trader_6736",
+    "created_at": "2026-09-12T09:44:05.097Z",
+    "likes": 550,
+    "retweets": 107,
+    "text": "$KO product delayed again... disappointing #trading",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.68,
+    "gold_impact": 5
+  },
+  {
+    "id": "T003",
+    "source": "twitter",
+    "user": "@trader_5067",
+    "created_at": "2026-09-12T18:37:41.153Z",
+    "likes": 11,
+    "retweets": 77,
+    "text": "$MSFT bond spreads blowing out ⚠️ stay careful #stocks",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.74,
+    "gold_impact": 7
+  },
+  {
+    "id": "T065",
+    "source": "twitter",
+    "user": "@trader_9237",
+    "created_at": "2026-09-12T19:20:16.603Z",
+    "likes": 236,
+    "retweets": 11,
+    "text": "$GS cleared by regulators, great news #trading",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.74,
+    "gold_impact": 6
+  },
+  {
+    "id": "T014",
+    "source": "twitter",
+    "user": "@trader_489",
+    "created_at": "2026-09-12T19:56:58.351Z",
+    "likes": 419,
+    "retweets": 82,
+    "text": "new $AAPL launch looks amazing, orders flying 🔥 #investing",
+    "tickers": [
+      "AAPL"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.78,
+    "gold_impact": 5
+  },
+  {
+    "id": "T109",
+    "source": "twitter",
+    "user": "@trader_2283",
+    "created_at": "2026-09-12T20:16:38.098Z",
+    "likes": 263,
+    "retweets": 169,
+    "text": "$TSLA product delayed again... disappointing #stocks",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.51,
+    "gold_impact": 5
+  },
+  {
+    "id": "T054",
+    "source": "twitter",
+    "user": "@trader_8050",
+    "created_at": "2026-09-13T05:42:03.342Z",
+    "likes": 652,
+    "retweets": 194,
+    "text": "unemployment ticking up, recession vibes 📉 #markets",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.74,
+    "gold_impact": 6
+  },
+  {
+    "id": "T086",
+    "source": "twitter",
+    "user": "@trader_558",
+    "created_at": "2026-09-13T06:17:15.053Z",
+    "likes": 308,
+    "retweets": 173,
+    "text": "$TSLA deal is accretive, love it 💪 #investing",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.61,
+    "gold_impact": 7
+  },
+  {
+    "id": "T060",
+    "source": "twitter",
+    "user": "@trader_1542",
+    "created_at": "2026-09-13T06:23:22.773Z",
+    "likes": 238,
+    "retweets": 26,
+    "text": "inflation hot again, Fed not done hiking 😬 #macro #markets",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.61,
+    "gold_impact": 6
+  },
+  {
+    "id": "T092",
+    "source": "twitter",
+    "user": "@trader_9838",
+    "created_at": "2026-09-13T09:16:17.722Z",
+    "likes": 714,
+    "retweets": 115,
+    "text": "$JNJ event next month, anyone going? #finance",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.05,
+    "gold_impact": 1
+  },
+  {
+    "id": "T119",
+    "source": "twitter",
+    "user": "@trader_2057",
+    "created_at": "2026-09-13T10:55:58.185Z",
+    "likes": 632,
+    "retweets": 164,
+    "text": "$MSFT downgraded, debt load worrying me, selling #investing",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.64,
+    "gold_impact": 8
+  },
+  {
+    "id": "T095",
+    "source": "twitter",
+    "user": "@trader_1528",
+    "created_at": "2026-09-13T20:12:53.451Z",
+    "likes": 728,
+    "retweets": 72,
+    "text": "rumors that $NVDA is eyeing acquisitions, let's see #finance",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.06,
+    "gold_impact": 2
+  },
+  {
+    "id": "T039",
+    "source": "twitter",
+    "user": "@trader_5170",
+    "created_at": "2026-09-13T22:39:43.068Z",
+    "likes": 578,
+    "retweets": 111,
+    "text": "dumping $JNJ, this quarter was awful",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.66,
+    "gold_impact": 6
+  },
+  {
+    "id": "T090",
+    "source": "twitter",
+    "user": "@trader_8416",
+    "created_at": "2026-09-14T01:37:03.575Z",
+    "likes": 387,
+    "retweets": 63,
+    "text": "Oil spiking, markets bleeding. geopolitics is scary rn #markets #markets",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.58,
+    "gold_impact": 7
+  },
+  {
+    "id": "T068",
+    "source": "twitter",
+    "user": "@trader_9272",
+    "created_at": "2026-09-14T02:25:14.985Z",
+    "likes": 656,
+    "retweets": 78,
+    "text": "$XOM confirms talks, no terms yet #finance",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.11,
+    "gold_impact": 2
+  },
+  {
+    "id": "T002",
+    "source": "twitter",
+    "user": "@trader_2638",
+    "created_at": "2026-09-14T02:34:23.653Z",
+    "likes": 161,
+    "retweets": 81,
+    "text": "$NVDA deal is accretive, love it 💪",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.63,
+    "gold_impact": 6
+  },
+  {
+    "id": "T056",
+    "source": "twitter",
+    "user": "@trader_597",
+    "created_at": "2026-09-14T05:43:59.092Z",
+    "likes": 22,
+    "retweets": 57,
+    "text": "$NVDA downgraded, debt load worrying me, selling #markets",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.67,
+    "gold_impact": 8
+  },
+  {
+    "id": "T028",
+    "source": "twitter",
+    "user": "@trader_8351",
+    "created_at": "2026-09-14T10:10:26.055Z",
+    "likes": 233,
+    "retweets": 19,
+    "text": "$GOOGL bond offering coming this week #finance",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.06,
+    "gold_impact": 2
+  },
+  {
+    "id": "T101",
+    "source": "twitter",
+    "user": "@trader_4871",
+    "created_at": "2026-09-14T11:53:11.171Z",
+    "likes": 254,
+    "retweets": 158,
+    "text": "antitrust probe on $JPM, this could get ugly ⚠️ #finance",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.65,
+    "gold_impact": 7
+  },
+  {
+    "id": "T071",
+    "source": "twitter",
+    "user": "@trader_6513",
+    "created_at": "2026-09-14T16:03:04.762Z",
+    "likes": 233,
+    "retweets": 100,
+    "text": "$XOM refinanced at lower rates, solid #trading",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.61,
+    "gold_impact": 7
+  },
+  {
+    "id": "T035",
+    "source": "twitter",
+    "user": "@trader_8863",
+    "created_at": "2026-09-14T18:05:05.093Z",
+    "likes": 69,
+    "retweets": 148,
+    "text": "$MSFT credit rating upgraded, balance sheet looking healthy 💪 #markets",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.58,
+    "gold_impact": 6
+  },
+  {
+    "id": "T061",
+    "source": "twitter",
+    "user": "@trader_9192",
+    "created_at": "2026-09-15T00:32:06.107Z",
+    "likes": 397,
+    "retweets": 139,
+    "text": "$KO debt call tomorrow",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.05,
+    "gold_impact": 2
+  },
+  {
+    "id": "T088",
+    "source": "twitter",
+    "user": "@trader_8060",
+    "created_at": "2026-09-15T03:42:51.526Z",
+    "likes": 517,
+    "retweets": 104,
+    "text": "$KO crushed earnings 📈 guidance raised, bullish #trading",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.67,
+    "gold_impact": 5
+  },
+  {
+    "id": "T009",
+    "source": "twitter",
+    "user": "@trader_6240",
+    "created_at": "2026-09-15T15:02:37.588Z",
+    "likes": 288,
+    "retweets": 184,
+    "text": "$XOM just dropped something huge, bullish #investing",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.65,
+    "gold_impact": 4
+  },
+  {
+    "id": "T107",
+    "source": "twitter",
+    "user": "@trader_8946",
+    "created_at": "2026-09-15T22:31:13.976Z",
+    "likes": 274,
+    "retweets": 103,
+    "text": "$META crushed earnings 📈 guidance raised, bullish",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.67,
+    "gold_impact": 5
+  },
+  {
+    "id": "T108",
+    "source": "twitter",
+    "user": "@trader_9109",
+    "created_at": "2026-09-16T05:57:45.384Z",
+    "likes": 173,
+    "retweets": 104,
+    "text": "leaders meeting next week, watching headlines #markets",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.01,
+    "gold_impact": 2
+  },
+  {
+    "id": "T016",
+    "source": "twitter",
+    "user": "@trader_5297",
+    "created_at": "2026-09-16T15:44:02.265Z",
+    "likes": 64,
+    "retweets": 20,
+    "text": "JPMorgan Chase fined again... regulators not letting go #stocks",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.57,
+    "gold_impact": 7
+  },
+  {
+    "id": "T041",
+    "source": "twitter",
+    "user": "@trader_1368",
+    "created_at": "2026-09-18T10:52:23.527Z",
+    "likes": 279,
+    "retweets": 175,
+    "text": "$TSLA bond spreads blowing out ⚠️ stay careful #investing",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.73,
+    "gold_impact": 7
+  },
+  {
+    "id": "T031",
+    "source": "twitter",
+    "user": "@trader_4140",
+    "created_at": "2026-09-18T21:01:18.306Z",
+    "likes": 456,
+    "retweets": 93,
+    "text": "$KO fined again... regulators not letting go",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.78,
+    "gold_impact": 6
+  },
+  {
+    "id": "T027",
+    "source": "twitter",
+    "user": "@trader_4930",
+    "created_at": "2026-09-18T22:03:25.247Z",
+    "likes": 47,
+    "retweets": 132,
+    "text": "overpaying for that acquisition, $META is a sell for me #investing",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.77,
+    "gold_impact": 7
+  },
+  {
+    "id": "T089",
+    "source": "twitter",
+    "user": "@trader_7423",
+    "created_at": "2026-09-19T01:46:20.356Z",
+    "likes": 732,
+    "retweets": 151,
+    "text": "rumors that $NVDA is eyeing acquisitions, let's see #trading",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.1,
+    "gold_impact": 2
+  },
+  {
+    "id": "T081",
+    "source": "twitter",
+    "user": "@trader_1752",
+    "created_at": "2026-09-19T02:18:28.928Z",
+    "likes": 136,
+    "retweets": 123,
+    "text": "Walmart deal collapsed after regulators pushed back, bearish #finance",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.46,
+    "gold_impact": 7
+  },
+  {
+    "id": "T042",
+    "source": "twitter",
+    "user": "@trader_7971",
+    "created_at": "2026-09-19T09:07:28.484Z",
+    "likes": 606,
+    "retweets": 116,
+    "text": "jobs report beat, soft landing is real? #macro",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.58,
+    "gold_impact": 6
+  },
+  {
+    "id": "T118",
+    "source": "twitter",
+    "user": "@trader_493",
+    "created_at": "2026-09-19T09:15:59.277Z",
+    "likes": 377,
+    "retweets": 191,
+    "text": "Coca-Cola debt call tomorrow #finance",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.06,
+    "gold_impact": 2
+  },
+  {
+    "id": "T094",
+    "source": "twitter",
+    "user": "@trader_8991",
+    "created_at": "2026-09-19T17:05:12.911Z",
+    "likes": 272,
+    "retweets": 99,
+    "text": "$KO earnings miss + guidance cut. ouch 📉",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.86,
+    "gold_impact": 6
+  },
+  {
+    "id": "T018",
+    "source": "twitter",
+    "user": "@trader_4912",
+    "created_at": "2026-09-19T22:42:20.751Z",
+    "likes": 489,
+    "retweets": 41,
+    "text": "CPI cooler than expected! rate cut hopes alive 📈",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.67,
+    "gold_impact": 6
+  },
+  {
+    "id": "T020",
+    "source": "twitter",
+    "user": "@trader_5691",
+    "created_at": "2026-09-20T00:30:52.341Z",
+    "likes": 230,
+    "retweets": 137,
+    "text": "antitrust probe on $XOM, this could get ugly ⚠️ #markets",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.46,
+    "gold_impact": 6
+  },
+  {
+    "id": "T017",
+    "source": "twitter",
+    "user": "@trader_2480",
+    "created_at": "2026-09-20T09:19:45.654Z",
+    "likes": 328,
+    "retweets": 34,
+    "text": "Coca-Cola bond spreads blowing out ⚠️ stay careful #investing",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.62,
+    "gold_impact": 7
+  },
+  {
+    "id": "T025",
+    "source": "twitter",
+    "user": "@trader_445",
+    "created_at": "2026-09-20T14:56:51.306Z",
+    "likes": 179,
+    "retweets": 41,
+    "text": "$JPM product delayed again... disappointing #stocks",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.48,
+    "gold_impact": 4
+  },
+  {
+    "id": "T104",
+    "source": "twitter",
+    "user": "@trader_6939",
+    "created_at": "2026-09-20T16:37:29.040Z",
+    "likes": 601,
+    "retweets": 94,
+    "text": "$AMZN downgraded, debt load worrying me, selling",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.72,
+    "gold_impact": 6
+  },
+  {
+    "id": "T076",
+    "source": "twitter",
+    "user": "@trader_537",
+    "created_at": "2026-09-21T06:29:08.080Z",
+    "likes": 230,
+    "retweets": 56,
+    "text": "JPMorgan Chase credit rating upgraded, balance sheet looking healthy 💪",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.83,
+    "gold_impact": 8
+  },
+  {
+    "id": "T001",
+    "source": "twitter",
+    "user": "@trader_6095",
+    "created_at": "2026-09-21T16:34:26.563Z",
+    "likes": 597,
+    "retweets": 22,
+    "text": "$KO bond spreads blowing out ⚠️ stay careful #investing",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.87,
+    "gold_impact": 7
+  },
+  {
+    "id": "T097",
+    "source": "twitter",
+    "user": "@trader_1979",
+    "created_at": "2026-09-21T17:54:31.400Z",
+    "likes": 26,
+    "retweets": 150,
+    "text": "hearing on $JNJ industry tomorrow #finance",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.1,
+    "gold_impact": 2
+  },
+  {
+    "id": "T021",
+    "source": "twitter",
+    "user": "@trader_2048",
+    "created_at": "2026-09-21T19:05:27.318Z",
+    "likes": 716,
+    "retweets": 178,
+    "text": "$JPM numbers are insane, adding to my position 🚀 #investing",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.47,
+    "gold_impact": 6
+  },
+  {
+    "id": "T015",
+    "source": "twitter",
+    "user": "@trader_8539",
+    "created_at": "2026-09-21T21:03:56.705Z",
+    "likes": 508,
+    "retweets": 6,
+    "text": "Coca-Cola buying a rival?! smart move, bullish #markets",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.46,
+    "gold_impact": 5
+  },
+  {
+    "id": "T057",
+    "source": "twitter",
+    "user": "@trader_7791",
+    "created_at": "2026-09-22T00:03:30.864Z",
+    "likes": 131,
+    "retweets": 174,
+    "text": "dumping $BAC, this quarter was awful",
+    "tickers": [
+      "BAC"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.89,
+    "gold_impact": 4
+  },
+  {
+    "id": "T098",
+    "source": "twitter",
+    "user": "@trader_5142",
+    "created_at": "2026-09-22T02:47:23.921Z",
+    "likes": 719,
+    "retweets": 76,
+    "text": "waiting on $META results, no position yet #stocks",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.06,
+    "gold_impact": 2
+  },
+  {
+    "id": "T078",
+    "source": "twitter",
+    "user": "@trader_4299",
+    "created_at": "2026-09-22T09:47:54.818Z",
+    "likes": 603,
+    "retweets": 39,
+    "text": "tensions rising again, de-risking my portfolio",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.57,
+    "gold_impact": 9
+  },
+  {
+    "id": "T085",
+    "source": "twitter",
+    "user": "@trader_1662",
+    "created_at": "2026-09-22T13:57:58.583Z",
+    "likes": 352,
+    "retweets": 30,
+    "text": "$JPM fined again... regulators not letting go #stocks",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.51,
+    "gold_impact": 7
+  },
+  {
+    "id": "T105",
+    "source": "twitter",
+    "user": "@trader_7085",
+    "created_at": "2026-09-22T16:57:01.713Z",
+    "likes": 568,
+    "retweets": 29,
+    "text": "$MSFT numbers are insane, adding to my position 🚀 #investing",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.62,
+    "gold_impact": 6
+  },
+  {
+    "id": "T008",
+    "source": "twitter",
+    "user": "@trader_5639",
+    "created_at": "2026-09-22T19:54:58.706Z",
+    "likes": 319,
+    "retweets": 95,
+    "text": "$MSFT bond spreads blowing out ⚠️ stay careful #stocks",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.71,
+    "gold_impact": 8
+  },
+  {
+    "id": "T055",
+    "source": "twitter",
+    "user": "@trader_3179",
+    "created_at": "2026-09-22T22:30:16.701Z",
+    "likes": 673,
+    "retweets": 125,
+    "text": "$WMT deal collapsed after regulators pushed back, bearish #trading",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.56,
+    "gold_impact": 5
+  },
+  {
+    "id": "T079",
+    "source": "twitter",
+    "user": "@trader_513",
+    "created_at": "2026-09-23T02:06:47.925Z",
+    "likes": 382,
+    "retweets": 46,
+    "text": "new $GS launch looks amazing, orders flying 🔥 #finance",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.78,
+    "gold_impact": 4
+  },
+  {
+    "id": "T111",
+    "source": "twitter",
+    "user": "@trader_3681",
+    "created_at": "2026-09-23T04:31:39.507Z",
+    "likes": 365,
+    "retweets": 53,
+    "text": "$GOOGL launch is a flop imo, bearish #stocks",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.86,
+    "gold_impact": 3
+  },
+  {
+    "id": "T059",
+    "source": "twitter",
+    "user": "@trader_7586",
+    "created_at": "2026-09-23T13:54:20.169Z",
+    "likes": 613,
+    "retweets": 178,
+    "text": "new $JNJ launch looks amazing, orders flying 🔥 #stocks",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.51,
+    "gold_impact": 5
+  },
+  {
+    "id": "T083",
+    "source": "twitter",
+    "user": "@trader_2959",
+    "created_at": "2026-09-24T11:42:17.579Z",
+    "likes": 459,
+    "retweets": 116,
+    "text": "$MSFT deal is accretive, love it 💪 #investing",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.73,
+    "gold_impact": 5
+  },
+  {
+    "id": "T112",
+    "source": "twitter",
+    "user": "@trader_722",
+    "created_at": "2026-09-24T13:09:24.421Z",
+    "likes": 316,
+    "retweets": 199,
+    "text": "new $MSFT launch looks amazing, orders flying 🔥 #investing",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.8,
+    "gold_impact": 4
+  },
+  {
+    "id": "T045",
+    "source": "twitter",
+    "user": "@trader_6749",
+    "created_at": "2026-09-25T02:00:51.770Z",
+    "likes": 329,
+    "retweets": 16,
+    "text": "$BAC says it's cooperating with regulators #trading",
+    "tickers": [
+      "BAC"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.02,
+    "gold_impact": 2
+  },
+  {
+    "id": "T019",
+    "source": "twitter",
+    "user": "@trader_9285",
+    "created_at": "2026-09-25T11:55:43.512Z",
+    "likes": 148,
+    "retweets": 13,
+    "text": "$KO reports earnings after the bell today #stocks",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.04,
+    "gold_impact": 2
+  },
+  {
+    "id": "T091",
+    "source": "twitter",
+    "user": "@trader_9066",
+    "created_at": "2026-09-25T12:05:23.923Z",
+    "likes": 61,
+    "retweets": 60,
+    "text": "$PFE launch is a flop imo, bearish #markets",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.7,
+    "gold_impact": 3
+  },
+  {
+    "id": "T116",
+    "source": "twitter",
+    "user": "@trader_440",
+    "created_at": "2026-09-25T20:17:56.932Z",
+    "likes": 463,
+    "retweets": 128,
+    "text": "$JNJ numbers are insane, adding to my position 🚀",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.84,
+    "gold_impact": 6
+  },
+  {
+    "id": "T026",
+    "source": "twitter",
+    "user": "@trader_4685",
+    "created_at": "2026-09-26T03:10:38.974Z",
+    "likes": 108,
+    "retweets": 175,
+    "text": "$META downgraded, debt load worrying me, selling #finance",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.66,
+    "gold_impact": 7
+  },
+  {
+    "id": "T113",
+    "source": "twitter",
+    "user": "@trader_2664",
+    "created_at": "2026-09-26T08:35:17.816Z",
+    "likes": 261,
+    "retweets": 53,
+    "text": "$JPM event next month, anyone going? #investing",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.1,
+    "gold_impact": 1
+  },
+  {
+    "id": "T033",
+    "source": "twitter",
+    "user": "@trader_5468",
+    "created_at": "2026-09-26T12:03:47.843Z",
+    "likes": 0,
+    "retweets": 152,
+    "text": "dumping $KO, this quarter was awful #investing",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.71,
+    "gold_impact": 6
+  },
+  {
+    "id": "T032",
+    "source": "twitter",
+    "user": "@trader_8740",
+    "created_at": "2026-09-27T02:46:51.408Z",
+    "likes": 187,
+    "retweets": 35,
+    "text": "$WMT product delayed again... disappointing",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.56,
+    "gold_impact": 5
+  },
+  {
+    "id": "T006",
+    "source": "twitter",
+    "user": "@trader_7952",
+    "created_at": "2026-09-27T09:59:14.187Z",
+    "likes": 686,
+    "retweets": 93,
+    "text": "tensions rising again, de-risking my portfolio",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.89,
+    "gold_impact": 9
+  },
+  {
+    "id": "T117",
+    "source": "twitter",
+    "user": "@trader_3352",
+    "created_at": "2026-09-27T12:48:51.084Z",
+    "likes": 569,
+    "retweets": 113,
+    "text": "$KO fined again... regulators not letting go #markets",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.82,
+    "gold_impact": 5
+  },
+  {
+    "id": "T099",
+    "source": "twitter",
+    "user": "@trader_8436",
+    "created_at": "2026-09-27T16:59:46.258Z",
+    "likes": 686,
+    "retweets": 82,
+    "text": "$TSLA just dropped something huge, bullish #markets",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.6,
+    "gold_impact": 4
+  },
+  {
+    "id": "T074",
+    "source": "twitter",
+    "user": "@trader_9903",
+    "created_at": "2026-09-27T19:47:23.516Z",
+    "likes": 281,
+    "retweets": 159,
+    "text": "$GOOGL fined again... regulators not letting go #trading",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.88,
+    "gold_impact": 7
+  },
+  {
+    "id": "T010",
+    "source": "twitter",
+    "user": "@trader_514",
+    "created_at": "2026-09-28T00:51:25.463Z",
+    "likes": 607,
+    "retweets": 59,
+    "text": "$PFE buying a rival?! smart move, bullish #finance",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.8,
+    "gold_impact": 7
+  },
+  {
+    "id": "T043",
+    "source": "twitter",
+    "user": "@trader_8304",
+    "created_at": "2026-09-28T02:47:37.950Z",
+    "likes": 257,
+    "retweets": 144,
+    "text": "overpaying for that acquisition, $META is a sell for me #investing",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.77,
+    "gold_impact": 5
+  },
+  {
+    "id": "T040",
+    "source": "twitter",
+    "user": "@trader_4559",
+    "created_at": "2026-09-28T05:31:23.975Z",
+    "likes": 528,
+    "retweets": 52,
+    "text": "$NVDA earnings miss + guidance cut. ouch 📉",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.64,
+    "gold_impact": 5
+  },
+  {
+    "id": "T075",
+    "source": "twitter",
+    "user": "@trader_1628",
+    "created_at": "2026-09-28T14:51:54.417Z",
+    "likes": 180,
+    "retweets": 154,
+    "text": "$KO cleared by regulators, great news #finance",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.63,
+    "gold_impact": 6
+  },
+  {
+    "id": "T022",
+    "source": "twitter",
+    "user": "@trader_3115",
+    "created_at": "2026-09-28T15:10:21.998Z",
+    "likes": 195,
+    "retweets": 32,
+    "text": "new $AMZN launch looks amazing, orders flying 🔥 #finance",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.7,
+    "gold_impact": 4
+  },
+  {
+    "id": "T030",
+    "source": "twitter",
+    "user": "@trader_1131",
+    "created_at": "2026-09-28T20:18:35.443Z",
+    "likes": 143,
+    "retweets": 144,
+    "text": "leaders meeting next week, watching headlines",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.09,
+    "gold_impact": 2
+  },
+  {
+    "id": "T077",
+    "source": "twitter",
+    "user": "@trader_1675",
+    "created_at": "2026-09-29T00:06:36.313Z",
+    "likes": 90,
+    "retweets": 142,
+    "text": "$AMZN cleared by regulators, great news #investing",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.77,
+    "gold_impact": 5
+  },
+  {
+    "id": "T036",
+    "source": "twitter",
+    "user": "@trader_6860",
+    "created_at": "2026-09-29T20:06:19.442Z",
+    "likes": 207,
+    "retweets": 142,
+    "text": "ceasefire news! markets ripping 🚀 #stocks",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.79,
+    "gold_impact": 8
+  },
+  {
+    "id": "T050",
+    "source": "twitter",
+    "user": "@trader_5864",
+    "created_at": "2026-09-30T03:18:59.794Z",
+    "likes": 482,
+    "retweets": 9,
+    "text": "antitrust probe on $AMZN, this could get ugly ⚠️ #investing",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.46,
+    "gold_impact": 7
+  },
+  {
+    "id": "T046",
+    "source": "twitter",
+    "user": "@trader_7563",
+    "created_at": "2026-09-30T04:16:09.710Z",
+    "likes": 707,
+    "retweets": 94,
+    "text": "$XOM bond offering coming this week #trading",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.01,
+    "gold_impact": 2
+  },
+  {
+    "id": "T087",
+    "source": "twitter",
+    "user": "@trader_771",
+    "created_at": "2026-09-30T19:54:26.322Z",
+    "likes": 757,
+    "retweets": 168,
+    "text": "Apple product delayed again... disappointing",
+    "tickers": [
+      "AAPL"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.79,
+    "gold_impact": 4
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "aliases": [
+      "Apple Inc",
+      "iPhone maker"
+    ],
+    "sector": "Technology",
+    "beta": 1.2
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "aliases": [
+      "Microsoft Corp"
+    ],
+    "sector": "Technology",
+    "beta": 0.9
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "aliases": [
+      "Google",
+      "Alphabet Inc"
+    ],
+    "sector": "Technology",
+    "beta": 1.05
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "aliases": [
+      "Amazon.com",
+      "AWS parent"
+    ],
+    "sector": "Consumer Discretionary",
+    "beta": 1.15
+  },
+  {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "aliases": [
+      "Nvidia Corp"
+    ],
+    "sector": "Technology",
+    "beta": 1.7
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "aliases": [
+      "Meta",
+      "Facebook parent"
+    ],
+    "sector": "Communication Services",
+    "beta": 1.3
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "aliases": [
+      "Tesla Inc"
+    ],
+    "sector": "Consumer Discretionary",
+    "beta": 2
+  },
+  {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase",
+    "aliases": [
+      "JPMorgan",
+      "JP Morgan"
+    ],
+    "sector": "Financials",
+    "beta": 1.1
+  },
+  {
+    "ticker": "BAC",
+    "name": "Bank of America",
+    "aliases": [
+      "BofA"
+    ],
+    "sector": "Financials",
+    "beta": 1.3
+  },
+  {
+    "ticker": "GS",
+    "name": "Goldman Sachs",
+    "aliases": [
+      "Goldman"
+    ],
+    "sector": "Financials",
+    "beta": 1.35
+  },
+  {
+    "ticker": "XOM",
+    "name": "Exxon Mobil",
+    "aliases": [
+      "Exxon",
+      "ExxonMobil"
+    ],
+    "sector": "Energy",
+    "beta": 0.95
+  },
+  {
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "aliases": [
+      "J&J"
+    ],
+    "sector": "Healthcare",
+    "beta": 0.55
+  },
+  {
+    "ticker": "PFE",
+    "name": "Pfizer",
+    "aliases": [
+      "Pfizer Inc"
+    ],
+    "sector": "Healthcare",
+    "beta": 0.6
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "aliases": [
+      "Walmart Inc"
+    ],
+    "sector": "Consumer Staples",
+    "beta": 0.5
+  },
+  {
+    "ticker": "KO",
+    "name": "Coca-Cola",
+    "aliases": [
+      "Coca Cola",
+      "Coke"
+    ],
+    "sector": "Consumer Staples",
+    "beta": 0.6
+  }
+]

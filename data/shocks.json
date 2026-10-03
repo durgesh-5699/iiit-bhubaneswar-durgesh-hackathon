@@ -1,0 +1,50 @@
+{
+  "_description": "Shocks at impact=10. Applied scaled by impact/10. Triggered only when impact_score > trigger.min_impact.",
+  "trigger": {
+    "min_impact": 7
+  },
+  "scaling": "shock = base_shock * (impact_score / 10)",
+  "valuation_model": {
+    "equity": "MV * (equity_pct/100) * beta",
+    "bond_and_loan": "MV * -(duration) * (rate_bps + credit_spread_bps)/10000  (government bonds: rate only)",
+    "loan_credit_loss": "extra expected loss = MV * lgd * (credit_spread_bps/10000) * 0.5",
+    "derivative": "-dv01_usd_k/1000 * rate_bps (USD m); positive DV01 = pay-fixed"
+  },
+  "event_shocks": {
+    "Geopolitical": {
+      "equity_pct": -15,
+      "rate_bps": -50,
+      "credit_spread_bps": 150
+    },
+    "Macroeconomic": {
+      "equity_pct": -10,
+      "rate_bps": 200,
+      "credit_spread_bps": 75
+    },
+    "Credit Event": {
+      "equity_pct": -8,
+      "rate_bps": 0,
+      "credit_spread_bps": 200
+    },
+    "Regulatory": {
+      "equity_pct": -6,
+      "rate_bps": 0,
+      "credit_spread_bps": 40
+    },
+    "Earnings": {
+      "equity_pct": -5,
+      "rate_bps": 0,
+      "credit_spread_bps": 20
+    },
+    "Merger/Acquisition": {
+      "equity_pct": -2,
+      "rate_bps": 0,
+      "credit_spread_bps": 10
+    },
+    "Product Launch": {
+      "equity_pct": -1,
+      "rate_bps": 0,
+      "credit_spread_bps": 0
+    }
+  }
+}

@@ -1,0 +1,1260 @@
+[
+  {
+    "id": "N050",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-01T16:30:36.398Z",
+    "headline": "Johnson & Johnson reportedly exploring strategic acquisitions, sources say",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.02,
+    "gold_impact": 2
+  },
+  {
+    "id": "N006",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-01T22:25:07.582Z",
+    "headline": "GDP contracts for a second straight quarter, growth worries deepen",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.67,
+    "gold_impact": 5
+  },
+  {
+    "id": "N018",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-02T04:45:25.998Z",
+    "headline": "Jobs report beats forecasts, easing recession worries",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.71,
+    "gold_impact": 7
+  },
+  {
+    "id": "N005",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-02T05:22:44.081Z",
+    "headline": "Johnson & Johnson debuts flagship service, analysts see new revenue stream",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.73,
+    "gold_impact": 4
+  },
+  {
+    "id": "N002",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-02T06:43:13.190Z",
+    "headline": "Goldman Sachs misses profit estimates and cuts annual outlook",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.63,
+    "gold_impact": 6
+  },
+  {
+    "id": "N014",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-02T11:16:33.685Z",
+    "headline": "Microsoft agrees to acquire a rival in a multi-billion dollar deal",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.59,
+    "gold_impact": 5
+  },
+  {
+    "id": "N084",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-03T03:49:38.938Z",
+    "headline": "Diplomatic breakthrough lifts equities as trade tensions fade",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.87,
+    "gold_impact": 9
+  },
+  {
+    "id": "N059",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-03T08:10:12.737Z",
+    "headline": "Apple cleared of wrongdoing as regulators close investigation",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "AAPL"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.5,
+    "gold_impact": 7
+  },
+  {
+    "id": "N081",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-03T18:35:49.963Z",
+    "headline": "Diplomatic breakthrough lifts equities as trade tensions fade",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.46,
+    "gold_impact": 7
+  },
+  {
+    "id": "N047",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-03T20:24:50.889Z",
+    "headline": "Amazon reportedly exploring strategic acquisitions, sources say",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.1,
+    "gold_impact": 2
+  },
+  {
+    "id": "N024",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-04T06:55:00.015Z",
+    "headline": "Escalating tensions in the Middle East push oil sharply higher and rattle equity markets",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.64,
+    "gold_impact": 7
+  },
+  {
+    "id": "N035",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-04T14:15:32.573Z",
+    "headline": "Microsoft reportedly exploring strategic acquisitions, sources say",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.08,
+    "gold_impact": 2
+  },
+  {
+    "id": "N020",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-04T17:03:35.335Z",
+    "headline": "Meta Platforms shares slide after weak quarterly revenue and soft guidance",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.55,
+    "gold_impact": 5
+  },
+  {
+    "id": "N053",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-04T21:56:58.914Z",
+    "headline": "Tesla misses profit estimates and cuts annual outlook",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.83,
+    "gold_impact": 6
+  },
+  {
+    "id": "N069",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-05T14:10:22.713Z",
+    "headline": "Central bank policy meeting scheduled for next week",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.04,
+    "gold_impact": 2
+  },
+  {
+    "id": "N041",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-05T14:45:18.425Z",
+    "headline": "Walmart faces covenant concerns after weaker cash flow",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.47,
+    "gold_impact": 8
+  },
+  {
+    "id": "N043",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-05T15:34:25.989Z",
+    "headline": "Pfizer reportedly exploring strategic acquisitions, sources say",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.09,
+    "gold_impact": 2
+  },
+  {
+    "id": "N036",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-05T15:55:50.691Z",
+    "headline": "Central bank signals pause in rate hikes, markets cheer",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.63,
+    "gold_impact": 7
+  },
+  {
+    "id": "N009",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-06T05:01:19.029Z",
+    "headline": "New sanctions announced as regional conflict widens, global risk appetite weakens",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.85,
+    "gold_impact": 7
+  },
+  {
+    "id": "N072",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-06T14:48:50.792Z",
+    "headline": "Trade war fears resurface after fresh tariff threats between major economies",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.58,
+    "gold_impact": 8
+  },
+  {
+    "id": "N082",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-06T21:08:37.590Z",
+    "headline": "JPMorgan Chase abandons takeover bid after regulatory pushback",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.51,
+    "gold_impact": 6
+  },
+  {
+    "id": "N074",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-06T23:14:42.237Z",
+    "headline": "Microsoft reports quarterly results broadly in line with expectations",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.1,
+    "gold_impact": 2
+  },
+  {
+    "id": "N048",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-07T13:34:49.433Z",
+    "headline": "Ceasefire agreement eases geopolitical tensions, global markets rally",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.87,
+    "gold_impact": 7
+  },
+  {
+    "id": "N085",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-08T02:17:36.842Z",
+    "headline": "Pfizer unveils new product lineup, early orders exceed expectations",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "PFE"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.55,
+    "gold_impact": 3
+  },
+  {
+    "id": "N012",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-08T06:40:32.667Z",
+    "headline": "Central bank policy meeting scheduled for next week",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0,
+    "gold_impact": 2
+  },
+  {
+    "id": "N087",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-08T06:48:53.052Z",
+    "headline": "Central bank signals pause in rate hikes, markets cheer",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.66,
+    "gold_impact": 6
+  },
+  {
+    "id": "N004",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-09T08:30:41.910Z",
+    "headline": "Tesla product rollout draws weak demand and poor reviews",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.86,
+    "gold_impact": 3
+  },
+  {
+    "id": "N067",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-09T09:24:02.278Z",
+    "headline": "Bank of America says it is cooperating with regulators on routine review",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [
+      "BAC"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.1,
+    "gold_impact": 2
+  },
+  {
+    "id": "N037",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-09T09:54:19.519Z",
+    "headline": "Meta Platforms launches next-generation platform to strong reviews",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.48,
+    "gold_impact": 3
+  },
+  {
+    "id": "N044",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-11T04:40:54.178Z",
+    "headline": "JPMorgan Chase faces covenant concerns after weaker cash flow",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.78,
+    "gold_impact": 7
+  },
+  {
+    "id": "N031",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-11T11:36:59.495Z",
+    "headline": "Tesla to hold investor call on debt refinancing plans",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.09,
+    "gold_impact": 2
+  },
+  {
+    "id": "N094",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-11T12:10:59.495Z",
+    "headline": "Tesla to hold investor call on debt refinancing plans",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.09,
+    "gold_impact": 2,
+    "gold_duplicate_of": "N031"
+  },
+  {
+    "id": "N071",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-12T14:10:16.084Z",
+    "headline": "Johnson & Johnson to hold investor call on debt refinancing plans",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.03,
+    "gold_impact": 2
+  },
+  {
+    "id": "N042",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-12T14:58:40.417Z",
+    "headline": "New sanctions announced as regional conflict widens, global risk appetite weakens",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.64,
+    "gold_impact": 9
+  },
+  {
+    "id": "N049",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-12T16:28:17.269Z",
+    "headline": "Alphabet profit surges past analyst forecasts on margin expansion",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.9,
+    "gold_impact": 5
+  },
+  {
+    "id": "N070",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-13T10:25:36.886Z",
+    "headline": "Amazon misses profit estimates and cuts annual outlook",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.88,
+    "gold_impact": 6
+  },
+  {
+    "id": "N057",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-13T17:41:35.268Z",
+    "headline": "Ceasefire agreement eases geopolitical tensions, global markets rally",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.53,
+    "gold_impact": 9
+  },
+  {
+    "id": "N023",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-13T22:16:43.408Z",
+    "headline": "Johnson & Johnson completes merger, projects significant cost synergies",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "JNJ"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.49,
+    "gold_impact": 6
+  },
+  {
+    "id": "N061",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-14T03:07:15.651Z",
+    "headline": "JPMorgan Chase refinances debt at lower rates, improving liquidity outlook",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.79,
+    "gold_impact": 8
+  },
+  {
+    "id": "N001",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-14T15:53:09.432Z",
+    "headline": "Goldman Sachs unveils new product lineup, early orders exceed expectations",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.81,
+    "gold_impact": 4
+  },
+  {
+    "id": "N091",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-14T16:25:09.432Z",
+    "headline": "Goldman Sachs unveils new product lineup, early orders exceed expectations",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.81,
+    "gold_impact": 4,
+    "gold_duplicate_of": "N001"
+  },
+  {
+    "id": "N028",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-16T04:54:24.652Z",
+    "headline": "JPMorgan Chase completes merger, projects significant cost synergies",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.62,
+    "gold_impact": 7
+  },
+  {
+    "id": "N033",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-16T05:38:34.544Z",
+    "headline": "GDP contracts for a second straight quarter, growth worries deepen",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.85,
+    "gold_impact": 6
+  },
+  {
+    "id": "N038",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-17T04:48:40.699Z",
+    "headline": "Nvidia faces shareholder backlash over expensive acquisition",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.47,
+    "gold_impact": 6
+  },
+  {
+    "id": "N003",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-17T22:50:06.833Z",
+    "headline": "Cross-border military escalation sparks flight to safe-haven assets",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.87,
+    "gold_impact": 9
+  },
+  {
+    "id": "N090",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-17T22:58:27.922Z",
+    "headline": "Escalating tensions in the Middle East push oil sharply higher and rattle equity markets",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.86,
+    "gold_impact": 8
+  },
+  {
+    "id": "N008",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-18T06:51:37.445Z",
+    "headline": "Rating agency places Coca-Cola on negative watch over rising leverage",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.88,
+    "gold_impact": 8
+  },
+  {
+    "id": "N083",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-18T14:32:04.227Z",
+    "headline": "Goldman Sachs profit surges past analyst forecasts on margin expansion",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.52,
+    "gold_impact": 6
+  },
+  {
+    "id": "N025",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-18T16:26:37.910Z",
+    "headline": "Meta Platforms shares slide after weak quarterly revenue and soft guidance",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.7,
+    "gold_impact": 5
+  },
+  {
+    "id": "N068",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-18T16:44:27.897Z",
+    "headline": "Coca-Cola teases upcoming launch without sharing details",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.04,
+    "gold_impact": 1
+  },
+  {
+    "id": "N078",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-19T03:14:48.532Z",
+    "headline": "Surprise jump in unemployment raises recession fears",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.55,
+    "gold_impact": 7
+  },
+  {
+    "id": "N076",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-19T05:41:25.287Z",
+    "headline": "Microsoft recalls newly launched product after safety complaints",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.72,
+    "gold_impact": 4
+  },
+  {
+    "id": "N073",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-19T16:18:07.507Z",
+    "headline": "Coca-Cola beats quarterly earnings estimates and raises full-year guidance",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.61,
+    "gold_impact": 6
+  },
+  {
+    "id": "N039",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-20T12:28:46.146Z",
+    "headline": "Shipping disruptions in a key maritime corridor raise supply chain concerns",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.67,
+    "gold_impact": 7
+  },
+  {
+    "id": "N021",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-21T08:43:24.901Z",
+    "headline": "Fed signals further rate hikes as inflation stays stubbornly high",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.87,
+    "gold_impact": 7
+  },
+  {
+    "id": "N093",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-21T09:13:24.901Z",
+    "headline": "Fed signals further rate hikes as inflation stays stubbornly high",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.87,
+    "gold_impact": 7,
+    "gold_duplicate_of": "N021"
+  },
+  {
+    "id": "N077",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-21T12:32:56.262Z",
+    "headline": "Meta Platforms confirms preliminary merger discussions without terms",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.02,
+    "gold_impact": 2
+  },
+  {
+    "id": "N022",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-22T06:40:37.016Z",
+    "headline": "Nvidia shares slide after weak quarterly revenue and soft guidance",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.88,
+    "gold_impact": 5
+  },
+  {
+    "id": "N088",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-22T07:43:26.670Z",
+    "headline": "Goldman Sachs debuts flagship service, analysts see new revenue stream",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "GS"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.6,
+    "gold_impact": 5
+  },
+  {
+    "id": "N058",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-22T20:47:51.243Z",
+    "headline": "Walmart reportedly exploring strategic acquisitions, sources say",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": -0.07,
+    "gold_impact": 2
+  },
+  {
+    "id": "N054",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-22T23:24:04.548Z",
+    "headline": "Trade war fears resurface after fresh tariff threats between major economies",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.6,
+    "gold_impact": 9
+  },
+  {
+    "id": "N060",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-23T03:46:34.182Z",
+    "headline": "Cross-border military escalation sparks flight to safe-haven assets",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.79,
+    "gold_impact": 9
+  },
+  {
+    "id": "N027",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-23T04:41:18.518Z",
+    "headline": "Core inflation comes in hotter than expected, bond yields surge",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.51,
+    "gold_impact": 7
+  },
+  {
+    "id": "N016",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-23T11:19:42.444Z",
+    "headline": "Amazon unveils new product lineup, early orders exceed expectations",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.88,
+    "gold_impact": 3
+  },
+  {
+    "id": "N046",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-23T13:18:40.439Z",
+    "headline": "Nvidia downgraded as debt load and interest costs climb",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.68,
+    "gold_impact": 8
+  },
+  {
+    "id": "N051",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-23T13:21:57.428Z",
+    "headline": "World leaders to meet next week to discuss regional security",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.03,
+    "gold_impact": 2
+  },
+  {
+    "id": "N032",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-24T03:40:27.262Z",
+    "headline": "JPMorgan Chase delays flagship launch amid supply chain problems",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.69,
+    "gold_impact": 5
+  },
+  {
+    "id": "N062",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-24T10:35:57.516Z",
+    "headline": "Exxon Mobil agrees to acquire a rival in a multi-billion dollar deal",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.54,
+    "gold_impact": 7
+  },
+  {
+    "id": "N040",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-24T21:07:29.920Z",
+    "headline": "Walmart refinances debt at lower rates, improving liquidity outlook",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.54,
+    "gold_impact": 7
+  },
+  {
+    "id": "N079",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-25T07:02:31.408Z",
+    "headline": "Amazon wins regulatory approval, clearing path for expansion",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.78,
+    "gold_impact": 6
+  },
+  {
+    "id": "N017",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-25T10:47:22.875Z",
+    "headline": "Regulators open antitrust probe into Microsoft",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "MSFT"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.49,
+    "gold_impact": 6
+  },
+  {
+    "id": "N064",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-26T05:33:24.003Z",
+    "headline": "Exxon Mobil completes merger, projects significant cost synergies",
+    "body": "Analysts said the development could support the shares in the near term.",
+    "tickers": [
+      "XOM"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.62,
+    "gold_impact": 6
+  },
+  {
+    "id": "N026",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-26T14:54:50.848Z",
+    "headline": "Tesla product rollout draws weak demand and poor reviews",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.74,
+    "gold_impact": 4
+  },
+  {
+    "id": "N034",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-26T21:45:44.409Z",
+    "headline": "Coca-Cola hit with multi-billion dollar fine over compliance failures",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.5,
+    "gold_impact": 6
+  },
+  {
+    "id": "N019",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-27T06:15:46.104Z",
+    "headline": "Tesla agrees to acquire a rival in a multi-billion dollar deal",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.64,
+    "gold_impact": 6
+  },
+  {
+    "id": "N029",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-27T11:55:40.152Z",
+    "headline": "Coca-Cola beats quarterly earnings estimates and raises full-year guidance",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "KO"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.71,
+    "gold_impact": 6
+  },
+  {
+    "id": "N089",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-27T14:46:49.555Z",
+    "headline": "Alphabet shares slide after weak quarterly revenue and soft guidance",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "GOOGL"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.9,
+    "gold_impact": 5
+  },
+  {
+    "id": "N052",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-27T15:03:48.754Z",
+    "headline": "JPMorgan Chase announces product event scheduled for next month",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [
+      "JPM"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.03,
+    "gold_impact": 1
+  },
+  {
+    "id": "N030",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-27T15:53:02.731Z",
+    "headline": "Central bank policy meeting scheduled for next week",
+    "body": "Market reaction was muted as investors awaited further details.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.09,
+    "gold_impact": 2
+  },
+  {
+    "id": "N015",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-28T00:36:28.381Z",
+    "headline": "New sanctions announced as regional conflict widens, global risk appetite weakens",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.83,
+    "gold_impact": 9
+  },
+  {
+    "id": "N063",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-28T05:22:36.819Z",
+    "headline": "Trade war fears resurface after fresh tariff threats between major economies",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.48,
+    "gold_impact": 8
+  },
+  {
+    "id": "N056",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-29T01:21:21.869Z",
+    "headline": "Nvidia hit with multi-billion dollar fine over compliance failures",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [
+      "NVDA"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.61,
+    "gold_impact": 6
+  },
+  {
+    "id": "N065",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-29T07:50:33.623Z",
+    "headline": "Tesla downgraded as debt load and interest costs climb",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [
+      "TSLA"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.83,
+    "gold_impact": 8
+  },
+  {
+    "id": "N080",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-29T13:20:07.065Z",
+    "headline": "Amazon wins regulatory approval, clearing path for expansion",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.58,
+    "gold_impact": 7
+  },
+  {
+    "id": "N066",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-29T14:15:26.677Z",
+    "headline": "Surprise jump in unemployment raises recession fears",
+    "body": "Several brokerages flagged downside risks following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.55,
+    "gold_impact": 6
+  },
+  {
+    "id": "N011",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-29T21:42:41.495Z",
+    "headline": "Apple to hold investor call on debt refinancing plans",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [
+      "AAPL"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.12,
+    "gold_impact": 2
+  },
+  {
+    "id": "N092",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-29T22:10:41.495Z",
+    "headline": "Apple to hold investor call on debt refinancing plans",
+    "body": "Analysts said the impact on valuation remains unclear for now.",
+    "tickers": [
+      "AAPL"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.12,
+    "gold_impact": 2,
+    "gold_duplicate_of": "N011"
+  },
+  {
+    "id": "N055",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-30T01:11:01.035Z",
+    "headline": "Meta Platforms product rollout draws weak demand and poor reviews",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.59,
+    "gold_impact": 3
+  },
+  {
+    "id": "N010",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-30T01:17:26.699Z",
+    "headline": "Walmart faces covenant concerns after weaker cash flow",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.86,
+    "gold_impact": 8
+  },
+  {
+    "id": "N007",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-30T06:53:39.384Z",
+    "headline": "Walmart upgraded by rating agency on stronger balance sheet",
+    "body": "Investors welcomed the news, with trading volumes rising.",
+    "tickers": [
+      "WMT"
+    ],
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.81,
+    "gold_impact": 8
+  },
+  {
+    "id": "N086",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-30T08:47:25.567Z",
+    "headline": "Meta Platforms profit surges past analyst forecasts on margin expansion",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [
+      "META"
+    ],
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.81,
+    "gold_impact": 4
+  },
+  {
+    "id": "N075",
+    "source": "news",
+    "publisher": "Market Pulse (synthetic)",
+    "published_at": "2026-09-30T14:59:32.030Z",
+    "headline": "Central bank signals pause in rate hikes, markets cheer",
+    "body": "Several brokerages reiterated bullish views following the announcement.",
+    "tickers": [],
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.75,
+    "gold_impact": 6
+  },
+  {
+    "id": "N013",
+    "source": "news",
+    "publisher": "Global Markets Daily (synthetic)",
+    "published_at": "2026-09-30T18:54:45.377Z",
+    "headline": "New rules threaten Amazon's core business model",
+    "body": "Analysts warned the development could weigh on the shares in the near term.",
+    "tickers": [
+      "AMZN"
+    ],
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.72,
+    "gold_impact": 7
+  },
+  {
+    "id": "N045",
+    "source": "news",
+    "publisher": "Synthetic Financial Wire",
+    "published_at": "2026-09-30T21:41:31.874Z",
+    "headline": "Escalating tensions in the Middle East push oil sharply higher and rattle equity markets",
+    "body": "Investors reacted cautiously, with selling pressure building.",
+    "tickers": [],
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.66,
+    "gold_impact": 9
+  }
+]
