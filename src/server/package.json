@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsx --test",
     "gen:data": "tsx scripts/generateSyntheticData.ts",
-    "fetch:prices": "tsx scripts/fetchPrices.ts"
+    "fetch:prices": "tsx scripts/fetchPrices.ts",
+    "ingest": "tsx scripts/runIngestion.ts",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
