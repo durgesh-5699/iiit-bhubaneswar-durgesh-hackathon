@@ -100,3 +100,56 @@ export const analyzeText = (text: string) =>
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ text }),
   }).then((r) => parse<Signal>(r))
+
+// ---- Module B (stress testing) ----
+export interface StressShock {
+  equity_pct: number
+  rate_bps: number
+  credit_spread_bps: number
+}
+export interface StressEventInfo {
+  event_type: string
+  impact_score: number
+  tickers: string[]
+  sentiment_score?: number
+  doc_id?: string
+  text?: string
+  published_at?: string
+}
+export interface PositionResult {
+  position_id: string
+  instrument: string
+  asset_type: string
+  sector: string
+  issuer_or_ticker: string
+  exposure: number
+  before: number
+  after: number
+  delta: number
+  delta_pct: number
+}
+export interface Bucket {
+  name: string
+  before: number
+  after: number
+  delta: number
+  delta_pct: number
+}
+export interface StressResult {
+  event: StressEventInfo
+  triggered: boolean
+  scale: number
+  scope: 'market-wide' | 'issuer-specific'
+  shocks: StressShock
+  portfolio: { before: number; after: number; delta: number; delta_pct: number }
+  by_asset_type: Bucket[]
+  by_sector: Bucket[]
+  top_losers: PositionResult[]
+  positions: PositionResult[]
+}
+export interface TriggerRow extends StressEventInfo {
+  scope: string
+  portfolio_delta_usd_m: number
+  portfolio_delta_pct: number
+}
+export const EVENT_TYPES = ['Geopolitical', 'Macroeconomic', 'Credit Event', 'Regulatory', 'Earnings', 'Merger/Acquisition', 'Product Launch'] as const

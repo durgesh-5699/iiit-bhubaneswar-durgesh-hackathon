@@ -4,9 +4,10 @@ import type { Health } from './api'
 import AnalyzerCard from './components/AnalyzerCard'
 import EventsTable from './components/EventsTable'
 import RebalancerPanel from './components/RebalancerPanel'
+import StressPanel from './components/StressPanel'
 import './App.css'
 
-type Tab = 'signals' | 'rebalancer'
+type Tab = 'signals' | 'rebalancer' | 'stress'
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('signals')
@@ -31,6 +32,7 @@ export default function App() {
       <nav>
         <button className={tab === 'signals' ? 'active' : ''} onClick={() => setTab('signals')}>Signals</button>
         <button className={tab === 'rebalancer' ? 'active' : ''} onClick={() => setTab('rebalancer')}>Module A · Rebalancer</button>
+        <button className={tab === 'stress' ? 'active' : ''} onClick={() => setTab('stress')}>Module B · Stress test</button>
       </nav>
       <main>
         {tab === 'signals' && (
@@ -40,6 +42,7 @@ export default function App() {
           </div>
         )}
         {tab === 'rebalancer' && <RebalancerPanel />}
+        {tab === 'stress' && <StressPanel />}
       </main>
     </div>
   )

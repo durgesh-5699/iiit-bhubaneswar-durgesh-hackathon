@@ -15,7 +15,8 @@
     "start": "tsx src/server.ts",
     "build:signals": "tsx scripts/buildSignals.ts",
     "seed:mongo": "tsx scripts/seedMongo.ts",
-    "module-a": "tsx scripts/runRebalancer.ts"
+    "module-a": "tsx scripts/runRebalancer.ts",
+    "module-b": "tsx scripts/runStress.ts"
   },
   "keywords": [],
   "author": "",

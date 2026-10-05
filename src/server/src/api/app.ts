@@ -7,8 +7,12 @@ import { loadStocks } from "../ingestion/loaders";
 import { analyze, EngineOptions } from "../nlp/engine";
 import { DEFAULT_PARAMS, runRebalancer, validateParams } from "../modules/rebalancer/simulate";
 import { loadPrices, PriceData } from "../modules/rebalancer/prices";
+import { isTrigger, runStress } from "../modules/stress/engine";
+import type { StressEvent } from "../modules/stress/engine";
+import { loadPortfolio, loadShockConfig } from "../modules/stress/portfolio";
 import { Store } from "../store/store";
 import { Doc } from "../types";
+import type { Signal } from "../nlp/signal";
 
 const SignalQuery = z.object({
   ticker: z.string().toUpperCase().optional(),
@@ -31,6 +35,15 @@ const RebalanceQuery = z.object({
   min_weight: z.coerce.number().min(0).max(0.2).optional(),
   max_weight: z.coerce.number().min(0.05).max(1).optional(),
   cost_bps: z.coerce.number().min(0).max(100).optional(),
+});
+const TriggerQuery = z.object({
+  above: z.coerce.number().min(0).max(9.99).optional(),
+  adverse_only: z.enum(["true", "false"]).default("true"),
+});
+const ScenarioQuery = z.object({
+  event_type: z.enum(["Geopolitical", "Macroeconomic", "Credit Event", "Merger/Acquisition", "Product Launch", "Earnings", "Regulatory"]),
+  impact: z.coerce.number().min(1).max(10),
+  ticker: z.string().toUpperCase().optional(),
 });
 const AnalyzeBody = z.object({ text: z.string().trim().min(3).max(2000), source: z.enum(["news", "twitter"]).default("news") });
 
@@ -76,6 +89,42 @@ export function createApp(store: Store, engine: EngineOptions = {}) {
     if (bad) return res.status(400).json({ error: "invalid parameters", details: [bad] });
     const daily = (await Promise.all([...prices.tickers, "MARKET"].map((t) => store.series(t)))).flat();
     res.json(runRebalancer({ params, stocks, daily, prices }));
+  });
+
+  const portfolio = loadPortfolio();
+  const shockCfg = loadShockConfig();
+  const sectorByTicker = new Map(stocks.map((x) => [x.ticker, x.sector]));
+  const sectorOf = (t: string) => sectorByTicker.get(t);
+  const asEvent = (s: Signal): StressEvent => ({ event_type: s.event_type, impact_score: s.impact_score, tickers: s.tickers, sentiment_score: s.sentiment_score, doc_id: s.doc_id, text: s.text, published_at: s.published_at });
+
+  app.get("/api/stress/portfolio", (_req, res) => {
+    const r = runStress(portfolio, shockCfg, { event_type: "none", impact_score: 0, tickers: [] }, sectorOf);
+    res.json({ positions: portfolio, total_usd_m: r.portfolio.before, by_asset_type: r.by_asset_type, by_sector: r.by_sector, trigger_above: shockCfg.trigger.min_impact });
+  });
+
+  app.get("/api/stress/triggers", async (req, res) => {
+    const q = TriggerQuery.parse(req.query);
+    const above = q.above ?? shockCfg.trigger.min_impact;
+    const adverse = q.adverse_only === "true";
+    const candidates = await store.signals({ min_impact: Math.floor(above) + 1, limit: 500 });
+    const data = candidates.filter((s) => isTrigger(s, shockCfg, adverse, above)).map((s) => {
+      const r = runStress(portfolio, shockCfg, asEvent(s), sectorOf, adverse);
+      return { ...asEvent(s), scope: r.scope, portfolio_delta_usd_m: r.portfolio.delta, portfolio_delta_pct: r.portfolio.delta_pct };
+    }).sort((a, b) => a.portfolio_delta_usd_m - b.portfolio_delta_usd_m);
+    res.json({ count: data.length, above, adverse_only: adverse, data });
+  });
+
+  app.get("/api/stress/run", async (req, res) => {
+    const docId = z.object({ doc_id: z.string().min(1) }).parse(req.query).doc_id;
+    const s = await store.signal(docId);
+    if (!s) return res.status(404).json({ error: "signal not found" });
+    res.json(runStress(portfolio, shockCfg, asEvent(s), sectorOf));
+  });
+
+  app.get("/api/stress/scenario", (req, res) => {
+    const q = ScenarioQuery.parse(req.query);
+    if (q.ticker && !sectorByTicker.has(q.ticker)) return res.status(400).json({ error: "invalid request", details: [`ticker: ${q.ticker} is not in the index universe`] });
+    res.json(runStress(portfolio, shockCfg, { event_type: q.event_type, impact_score: q.impact, tickers: q.ticker ? [q.ticker] : [], sentiment_score: -1 }, sectorOf));
   });
 
   app.post("/api/analyze", async (req, res) => {
