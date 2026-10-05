@@ -10,7 +10,11 @@
     "ingest": "tsx scripts/runIngestion.ts",
     "typecheck": "tsc --noEmit",
     "nlp": "tsx scripts/runNlp.ts",
-    "nlp:models": "tsx scripts/runNlp.ts --models"
+    "nlp:models": "tsx scripts/runNlp.ts --models",
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build:signals": "tsx scripts/buildSignals.ts",
+    "seed:mongo": "tsx scripts/seedMongo.ts"
   },
   "keywords": [],
   "author": "",
