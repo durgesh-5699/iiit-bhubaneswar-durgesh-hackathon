@@ -1,0 +1,274 @@
+[
+  {
+    "id": "R01",
+    "source": "news",
+    "text": "Apple's iPhone sales top Wall Street forecasts in latest quarter",
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R02",
+    "source": "news",
+    "text": "Tesla lowers profit forecast as price cuts squeeze margins",
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R03",
+    "source": "news",
+    "text": "Microsoft to buy cybersecurity startup for $2 billion",
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R04",
+    "source": "news",
+    "text": "Pfizer's blockbuster drug gets FDA green light",
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R05",
+    "source": "news",
+    "text": "Moody's cuts Bank of America outlook to negative",
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R06",
+    "source": "news",
+    "text": "JPMorgan faces probe by US prosecutors over trading practices",
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R07",
+    "source": "news",
+    "text": "Nvidia unveils new AI chip family at developer conference",
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R08",
+    "source": "news",
+    "text": "Amazon in advanced talks to buy robotics firm, sources say",
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.0,
+    "gold_label": "neu"
+  },
+  {
+    "id": "R09",
+    "source": "news",
+    "text": "Goldman Sachs profit jumps on trading windfall",
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R10",
+    "source": "news",
+    "text": "Meta delays launch of new smart glasses by six months",
+    "gold_event": "Product Launch",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R11",
+    "source": "news",
+    "text": "Walmart's debt rating raised one notch by a major ratings agency",
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R12",
+    "source": "news",
+    "text": "Coca-Cola faces new lawsuit and regulatory scrutiny over labeling",
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R13",
+    "source": "news",
+    "text": "Johnson & Johnson to report third-quarter results on Tuesday",
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.0,
+    "gold_label": "neu"
+  },
+  {
+    "id": "R14",
+    "source": "news",
+    "text": "Oil jumps as drone attack hits major Gulf export terminal",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R15",
+    "source": "news",
+    "text": "US and China agree to roll back tariffs in landmark trade deal",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R16",
+    "source": "news",
+    "text": "Fed holds rates steady, signals cuts could come later this year",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R17",
+    "source": "news",
+    "text": "Consumer prices rise at fastest pace in two years, stoking rate worries",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R18",
+    "source": "news",
+    "text": "Eurozone economy slips into recession as factory output shrinks",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R19",
+    "source": "news",
+    "text": "Peace talks stall as border clashes intensify",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R20",
+    "source": "news",
+    "text": "Central bank to announce interest rate decision on Thursday",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.0,
+    "gold_label": "neu"
+  },
+  {
+    "id": "R21",
+    "source": "news",
+    "text": "Payrolls surge in September, unemployment falls to multi-year low",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R22",
+    "source": "news",
+    "text": "Naval blockade raises fears for global shipping routes",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R23",
+    "source": "twitter",
+    "text": "Not touching $TSLA until the delivery numbers improve, guidance looks shaky",
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R24",
+    "source": "twitter",
+    "text": "Fed pivot incoming?? inflation finally cooling, bulls are back 📈",
+    "gold_event": "Macroeconomic",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R25",
+    "source": "twitter",
+    "text": "war headlines again, oil going vertical, my energy trades are scary 😬",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R26",
+    "source": "twitter",
+    "text": "$AMZN acquiring that robotics co is genius, huge synergies",
+    "gold_event": "Merger/Acquisition",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R27",
+    "source": "twitter",
+    "text": "$BAC rating cut by agency, funding costs going up, not great",
+    "gold_event": "Credit Event",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R28",
+    "source": "twitter",
+    "text": "FDA just cleared $PFE's new drug 🎉 big win",
+    "gold_event": "Regulatory",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  },
+  {
+    "id": "R29",
+    "source": "twitter",
+    "text": "$AAPL keynote tomorrow, expecting new iPhone and vision updates",
+    "gold_event": "Product Launch",
+    "gold_sentiment": 0.0,
+    "gold_label": "neu"
+  },
+  {
+    "id": "R30",
+    "source": "twitter",
+    "text": "Antitrust regulators coming for $GOOGL again, this could drag for years",
+    "gold_event": "Regulatory",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R31",
+    "source": "twitter",
+    "text": "tariff announcement tomorrow, markets are nervous #trade",
+    "gold_event": "Geopolitical",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R32",
+    "source": "twitter",
+    "text": "$XOM bond spreads look fine, no stress in credit",
+    "gold_event": "Credit Event",
+    "gold_sentiment": 0.0,
+    "gold_label": "neu"
+  },
+  {
+    "id": "R33",
+    "source": "twitter",
+    "text": "Layoffs and a weak outlook, $META looks vulnerable",
+    "gold_event": "Earnings",
+    "gold_sentiment": -0.7,
+    "gold_label": "neg"
+  },
+  {
+    "id": "R34",
+    "source": "twitter",
+    "text": "Great quarter from $WMT, revenue beat and raised guidance",
+    "gold_event": "Earnings",
+    "gold_sentiment": 0.7,
+    "gold_label": "pos"
+  }
+]
