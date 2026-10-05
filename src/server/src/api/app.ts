@@ -5,6 +5,8 @@ import { cleanText } from "../ingestion/clean";
 import { EntityLinker } from "../ingestion/entityLinker";
 import { loadStocks } from "../ingestion/loaders";
 import { analyze, EngineOptions } from "../nlp/engine";
+import { DEFAULT_PARAMS, runRebalancer, validateParams } from "../modules/rebalancer/simulate";
+import { loadPrices, PriceData } from "../modules/rebalancer/prices";
 import { Store } from "../store/store";
 import { Doc } from "../types";
 
@@ -20,9 +22,18 @@ const SignalQuery = z.object({
   limit: z.coerce.number().int().min(1).max(1000).default(100),
 });
 const RangeQuery = z.object({ from: z.string().optional(), to: z.string().optional() });
+const RebalanceQuery = z.object({
+  decay: z.coerce.number().min(0).max(0.98).optional(),
+  tilt: z.coerce.number().min(0).max(3).optional(),
+  market_gamma: z.coerce.number().min(0).max(2).optional(),
+  alpha: z.coerce.number().min(0.05).max(1).optional(),
+  max_turnover: z.coerce.number().min(0.01).max(1).optional(),
+  min_weight: z.coerce.number().min(0).max(0.2).optional(),
+  max_weight: z.coerce.number().min(0.05).max(1).optional(),
+  cost_bps: z.coerce.number().min(0).max(100).optional(),
+});
 const AnalyzeBody = z.object({ text: z.string().trim().min(3).max(2000), source: z.enum(["news", "twitter"]).default("news") });
 
-/** Builds the Express app. Endpoints are the "structured signals for downstream applications" the case study asks for. */
 export function createApp(store: Store, engine: EngineOptions = {}) {
   const stocks = loadStocks();
   const linker = new EntityLinker(stocks);
@@ -33,7 +44,6 @@ export function createApp(store: Store, engine: EngineOptions = {}) {
   app.get("/health", async (_req, res) => res.json({ status: "ok", store: store.name, ...(await store.counts()) }));
   app.get("/api/universe", (_req, res) => res.json({ count: stocks.length, data: stocks }));
 
-  // Raw per-document signals, filterable. e.g. /api/signals?ticker=AAPL&min_impact=6
   app.get("/api/signals", async (req, res) => {
     const data = await store.signals(SignalQuery.parse(req.query));
     res.json({ count: data.length, data });
@@ -43,7 +53,6 @@ export function createApp(store: Store, engine: EngineOptions = {}) {
     s ? res.json(s) : res.status(404).json({ error: "signal not found" });
   });
 
-  // Module A feed: latest sentiment per ticker, and the daily series for one ticker (ticker=MARKET for market-wide news)
   app.get("/api/sentiment/latest", async (_req, res) => { const data = await store.latest(); res.json({ count: data.length, data }); });
   app.get("/api/sentiment/:ticker", async (req, res) => {
     const { from, to } = RangeQuery.parse(req.query);
@@ -52,14 +61,23 @@ export function createApp(store: Store, engine: EngineOptions = {}) {
     res.json({ ticker, count: data.length, data });
   });
 
-  // Module B feed: high-impact events. min_impact is inclusive; default 8 means "impact score > 7".
   app.get("/api/events", async (req, res) => {
     const q = SignalQuery.parse({ ...req.query, min_impact: req.query.min_impact ?? 8 });
     const data = (await store.signals(q)).filter((s) => s.event_type !== "Other");
     res.json({ count: data.length, min_impact: q.min_impact, data });
   });
 
-  // Real-time scoring of any text (used by the live demo box in the dashboard)
+  let prices: PriceData | null = null;
+  app.get("/api/rebalance", async (req, res) => {
+    const q = RebalanceQuery.parse(req.query);
+    const params = { ...DEFAULT_PARAMS, ...Object.fromEntries(Object.entries(q).filter(([, v]) => v !== undefined)) };
+    prices ??= loadPrices(stocks.map((s) => s.ticker));
+    const bad = validateParams(params, prices.tickers.length);
+    if (bad) return res.status(400).json({ error: "invalid parameters", details: [bad] });
+    const daily = (await Promise.all([...prices.tickers, "MARKET"].map((t) => store.series(t)))).flat();
+    res.json(runRebalancer({ params, stocks, daily, prices }));
+  });
+
   app.post("/api/analyze", async (req, res) => {
     const { text, source } = AnalyzeBody.parse(req.body);
     const clean = cleanText(text);

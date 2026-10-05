@@ -14,7 +14,8 @@
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
     "build:signals": "tsx scripts/buildSignals.ts",
-    "seed:mongo": "tsx scripts/seedMongo.ts"
+    "seed:mongo": "tsx scripts/seedMongo.ts",
+    "module-a": "tsx scripts/runRebalancer.ts"
   },
   "keywords": [],
   "author": "",
