@@ -1,0 +1,96 @@
+/** Hand-built finance sentiment lexicon (Loughran-McDonald style). Phrases run first and are masked so words are not double counted. */
+export interface Rule { re: RegExp; w: number }
+const mk = (p: string, w: number): Rule => ({ re: new RegExp(p, "gi"), w });
+const P = (p: string, w: number) => mk(p, w); // positive (+w)
+const N = (p: string, w: number) => mk(p, -w); // negative (-w)
+
+export const PHRASES: Rule[] = [
+  // --- positive phrases
+  P("beats? (?:wall street |analyst |market )?(?:estimates|expectations|forecasts)", 1.3),
+  P("top(?:s|ped)? (?:wall street |analyst )?(?:forecasts|estimates|expectations)", 1.2),
+  P("rais(?:es|ed|ing) (?:its |full-year |annual |the )*(?:guidance|outlook|forecast)", 1.1),
+  P("(?:record|strong|robust) (?:revenue|profit|earnings|sales|demand|results|growth)", 1.1),
+  P("profit (?:surges|jumps|soars|climbs|rises)", 1.1),
+  P("inflation (?:finally |is )?(?:cools?|cooling|cooled|eases|easing|falls|slows)", 1.0),
+  P("tensions? (?:ease|eases|fade|fades|cool|cools)", 1.0),
+  P("(?:eases?|easing|eased) (?:geopolitical |trade )?tensions", 1.0),
+  P("(?:easing|eases|ease) recession (?:worries|fears)", 0.9),
+  P("rate[- ]cut (?:hopes|bets|expectations)", 0.8),
+  P("signals? (?:rate )?cuts?", 0.7),
+  P("pause in (?:rate )?hikes", 0.8),
+  P("ceasefire", 1.0),
+  P("peace (?:deal|agreement)|diplomatic breakthrough", 1.0),
+  P("roll(?:s|ed)? back tariffs|landmark trade deal", 0.9),
+  P("unemployment (?:falls|drops|declines)|jobs? report beats|payrolls surge|multi-year low", 0.9),
+  P("cleared of (?:any )?wrongdoing", 1.0),
+  P("close[sd]? (?:its |the )?(?:probe|investigation)", 0.8),
+  P("(?:wins?|won|gets?|receives?|gains?) (?:regulatory |fda |final )?(?:approval|green light|clearance)", 1.1),
+  P("green light|clearance", 1.0),
+  P("(?:rating|outlook) (?:raised|upgraded|lifted)|(?:raised|upgraded|lifted) (?:one|two) notch", 1.1),
+  P("refinanc(?:es|ed) (?:debt )?at lower rates", 0.9),
+  P("bulls (?:are )?back|to the moon|smart move|big win|buying more|adding to", 0.9),
+  // --- negative phrases
+  N("misses? (?:profit |earnings |revenue |analyst |wall street )?(?:estimates|expectations|forecasts|targets)", 1.3),
+  N("(?:fall|falls|fell|falling) short of", 1.2),
+  N("(?:cuts?|lowers?|slash(?:es|ed)?|trims?) [\\w'$.&-]+(?: [\\w'$.&-]+){0,4} (?:guidance|outlook|forecast)", 1.2),
+  N("(?:negative|downgrade) (?:watch|outlook)|outlook to negative|on negative watch", 1.2),
+  N("(?:rating|debt rating|credit rating) (?:cut|lowered|downgraded|slashed)|rating cut", 1.2),
+  N("rising leverage|debt load|heavy debt|high leverage", 0.8),
+  N("covenant (?:concerns|breach|worries)", 1.0),
+  N("spreads? [\\w ]{0,25}(?:widen|blow(?:ing)? out)|widen(?:s|ed|ing)? sharply|blowing out|blow out", 1.0),
+  N("hotter than expected|stubbornly high|stays? (?:elevated|high)|hot again|inflation hot", 1.0),
+  N("yields (?:surge|jump|spike|climb|rise|soar)", 0.9),
+  N("oil (?:jumps|spikes|surges|soars|climbs|higher)|push(?:es)? oil", 0.9),
+  N("(?:consumer )?prices rise|stoking", 0.6),
+  N("(?:surprise )?jump in unemployment|unemployment (?:jumps?|rises?|rising|ticking up|climbs?)", 0.9),
+  N("rate hikes?|hik(?:es|ing|ed) rates?|rates? hike", 0.9),
+  N("slips? into recession|recession", 0.9),
+  N("trade war|tariff(?:s)? threats?", 0.9),
+  N("flight to (?:safe[- ]haven|safety)|safe[- ]haven", 0.8),
+  N("risk[- ]off|de-risking", 0.7),
+  N("not touching|staying away|stay away", 0.7),
+  N("(?:hit with|pay(?:ing)?|faces?) (?:an? )?(?:[\\w-]+ ){0,3}fine\\b|\\bfined\\b", 1.0),
+  N("(?:opens?|faces?|under|hit with) (?:an? )?(?:new )?(?:antitrust |regulatory |criminal |federal )?(?:probe|investigation|lawsuit|scrutiny)", 0.9),
+];
+
+export const WORDS: Rule[] = [
+  // positive
+  P("\\b(?:beat|beats|beating|topped|tops|exceed(?:s|ed)?|surpass(?:es|ed)?)\\b", 1.1),
+  P("\\b(?:surge[sd]?|soaP(?:s|ed)?|jump(?:s|ed)?|climb(?:s|ed)?)\\b", 0.7),
+  P("\\b(?:rall(?:y|ies|ied)|rips?|ripping)\\b", 0.9),
+  P("\\b(?:cheeP(?:s|ed)?|boost(?:s|ed|ing)?|welcomed)\\b", 0.7),
+  P("\\b(?:strong|stronger|strength|robust|record)\\b", 0.5),
+  P("\\b(?:wins?|won|win)\\b", 0.7),
+  P("\\b(?:approval|approved|cleared)\\b", 0.8),
+  P("\\b(?:accretive|synerg(?:y|ies)|breakthrough|bullish)\\b", 0.8),
+  P("\\b(?:upgrade[sd]?)\\b", 1.0),
+  P("\\b(?:crushed|smashing|smashed)\\b", 1.0),
+  P("\\b(?:amazing|great|genius|love|loving|huge|insane)\\b", 0.6),
+  P("\\b(?:improv(?:es|ed|ing|ement)|growth|healthy|expansion)\\b", 0.4),
+  P("\\b(?:unveil(?:s|ed)?|debut(?:s|ed)?|launch(?:es|ed)?)\\b", 0.3),
+  P("🚀|🎉", 0.8), P("📈", 0.6), P("💪|✅", 0.5), P("🔥", 0.4),
+  // negative
+  N("\\b(?:miss|misses|missed)\\b", 1.2),
+  N("\\b(?:slide[sd]?|slid|slump(?:s|ed)?|plunge[sd]?|tumble[sd]?|tank(?:s|ed)?|crash(?:es|ed)?)\\b", 0.9),
+  N("\\b(?:drop(?:s|ped)?|falls?|fell|slip(?:s|ped)?|declin(?:e|es|ed|ing))\\b", 0.6),
+  N("\\b(?:weak|weaker|weakness|soft|shaky|vulnerable|layoffs?|losses|loss)\\b", 0.7),
+  N("\\b(?:squeeze[sd]?|oversupply|drag)\\b", 0.6),
+  N("\\b(?:downgrade[sd]?)\\b", 1.0),
+  N("\\b(?:probe|investigation|scrutiny|lawsuit|antitrust)\\b", 0.7),
+  N("\\b(?:delay(?:s|ed|ing)?|postpone[sd]?)\\b", 0.8),
+  N("\\b(?:recalls?|recalled|abandon(?:s|ed)?|collapse[sd]?|backlash)\\b", 1.0),
+  N("\\b(?:default(?:s|ed)?|bankrupt\\w*)\\b", 1.0),
+  N("\\b(?:contract(?:s|ed)?|contraction|shrink(?:s|ing)?)\\b", 0.8),
+  N("\\b(?:sanctions?|escalat\\w+|threaten(?:s|ed)?)\\b", 0.9),
+  N("\\b(?:conflict|clashes|attacks?|blockade|war|military|rattle[sd]?|disruptions?|pushback)\\b", 0.7),
+  N("\\btensions?\\b", 0.5),
+  N("\\b(?:stall(?:s|ed)?|nervous|jittery|anxious|cautious(?:ly)?)\\b", 0.6),
+  N("\\b(?:fears?|worN(?:y|ies|ied|ying)|risks?|downside|warn(?:s|ed|ing)?)\\b", 0.6),
+  N("\\b(?:spik(?:es|ing|ed)|vertical)\\b", 0.5),
+  N("\\b(?:sell|selling|dump(?:ing)?|overpay\\w*)\\b", 0.7),
+  N("\\b(?:ouch|flop|bearish|bleed\\w*|scary|awful|disappoint\\w*)\\b", 0.9),
+  N("📉", 0.6), N("⚠", 0.5), N("😬", 0.5),
+];
+
+export const NEGATORS = /\b(?:not|no|never|without|hardly|unlikely to|fails? to|failed to)\s+(?:\w+\s+){0,2}$/i;
+export const INTENSIFIERS = /\b(?:sharply|record|multi-billion|billion|collapse[sd]?|plunge[sd]?|soar(?:s|ed)?|surge[sd]?|crisis|default|massive|worst|fastest|historic)\b/gi;

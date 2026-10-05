@@ -8,7 +8,9 @@
     "gen:data": "tsx scripts/generateSyntheticData.ts",
     "fetch:prices": "tsx scripts/fetchPrices.ts",
     "ingest": "tsx scripts/runIngestion.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "nlp": "tsx scripts/runNlp.ts",
+    "nlp:models": "tsx scripts/runNlp.ts --models"
   },
   "keywords": [],
   "author": "",
