@@ -47,6 +47,7 @@ export async function analyze(docs: Doc[], opts: EngineOptions = {}): Promise<Si
       event_type: type, event_confidence: conf,
       impact_score: impactScore(type, score, rs.intensity),
       evidence: [...rs.terms.slice(0, 4), ...ev.terms.slice(0, 3).map((t) => `event:${t}`)],
+      text: d.text,
       method: { sentiment: sentMethod, event: evMethod },
     });
   }

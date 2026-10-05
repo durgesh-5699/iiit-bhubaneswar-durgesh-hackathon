@@ -5,7 +5,7 @@ import { SignalFilter, Store } from "./store";
 
 const signalSchema = new Schema(
   { doc_id: { type: String, unique: true }, source: String, published_at: String, tickers: [String], scope: String, sentiment_score: Number, sentiment_label: String,
-    event_type: String, event_confidence: Number, impact_score: Number, evidence: [String], method: Object },
+    event_type: String, event_confidence: Number, impact_score: Number, evidence: [String], text: String, method: Object },
   { versionKey: false });
 signalSchema.index({ tickers: 1, published_at: -1 });
 signalSchema.index({ impact_score: -1 });
@@ -20,7 +20,6 @@ const DailyModel = mongoose.models.DailySentiment ?? mongoose.model("DailySentim
 
 const clean = <T>(x: any): T => { const { _id, ...rest } = x; return rest as T; };
 
-/** Optional store backed by MongoDB (set MONGODB_URI). Fill it with `npm run seed:mongo`. */
 export class MongoStore implements Store {
   readonly name = "mongodb";
   static async connect(uri: string) { await mongoose.connect(uri); return new MongoStore(); }
@@ -48,7 +47,6 @@ export class MongoStore implements Store {
   }
   async counts() { return { signals: await SignalModel.countDocuments(), dailyRows: await DailyModel.countDocuments() }; }
 
-  /** Replace collections with fresh data (used by the seed script). */
   static async seed(signals: Signal[], daily: DailySentiment[]) {
     await SignalModel.deleteMany({}); await DailyModel.deleteMany({});
     await SignalModel.insertMany(signals); await DailyModel.insertMany(daily);

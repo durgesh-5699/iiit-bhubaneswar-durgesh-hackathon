@@ -19,6 +19,7 @@ export interface Signal {
   event_confidence: number; // 0 .. 1
   impact_score: number; // 1 .. 10 (integer)
   evidence: string[]; // matched terms, for explainability
+  text?: string; // cleaned source text, shown in the dashboard
   method: { sentiment: string; event: string };
 }
 
