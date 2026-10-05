@@ -8,7 +8,7 @@
     "equity": "MV * (equity_pct/100) * beta",
     "bond_and_loan": "MV * -(duration) * (rate_bps + credit_spread_bps)/10000  (government bonds: rate only)",
     "loan_credit_loss": "extra expected loss = MV * lgd * (credit_spread_bps/10000) * 0.5",
-    "derivative": "-dv01_usd_k/1000 * rate_bps (USD m); positive DV01 = pay-fixed"
+    "derivative": "dMV (USD m) = +dv01_usd_k/1000 * rate_bps; positive DV01 = pay-fixed swap, which gains when rates rise (receive-fixed has negative DV01)"
   },
   "event_shocks": {
     "Geopolitical": {
@@ -46,5 +46,10 @@
       "rate_bps": 0,
       "credit_spread_bps": 0
     }
+  },
+  "trigger_note": "A stress test fires when impact_score > min_impact AND the event is adverse (sentiment < 0). Impact is severity, so favourable high-impact news does not stress the book.",
+  "propagation": {
+    "market_wide_event": "all positions, factor 1.0",
+    "company_event": "issuer's positions 1.0, same-sector positions 0.3, others 0"
   }
 }

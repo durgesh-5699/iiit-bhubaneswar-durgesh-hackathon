@@ -1,10 +1,16 @@
-
+/**
+ * Generates ALL synthetic datasets used by the prototype (deterministic, seeded).
+ * Run from src/server:  npm run gen:data
+ * Output: <repo>/data/{tickers,news_sample,tweets_sample,portfolio,shocks}.json + prices_fallback.csv
+ * NOTE: everything here is synthetic. No S&P Global / Crisil / proprietary data is used.
+ */
 import fs from "node:fs";
 import path from "node:path";
 
 const DATA_DIR = path.resolve(process.cwd(), "../../data");
 fs.mkdirSync(DATA_DIR, { recursive: true });
 
+// ---------- seeded RNG (reproducible) ----------
 function mulberry32(seed: number) {
   return () => {
     seed |= 0; seed = (seed + 0x6d2b79f5) | 0;
@@ -21,6 +27,7 @@ const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n
 const write = (f: string, data: unknown) =>
   fs.writeFileSync(path.join(DATA_DIR, f), typeof data === "string" ? data : JSON.stringify(data, null, 2));
 
+// ---------- universe: 15 large caps (S&P 100 constituents) ----------
 type Stock = { ticker: string; name: string; aliases: string[]; sector: string; beta: number };
 const STOCKS: Stock[] = [
   { ticker: "AAPL", name: "Apple", aliases: ["Apple Inc", "iPhone maker"], sector: "Technology", beta: 1.2 },
@@ -41,6 +48,7 @@ const STOCKS: Stock[] = [
 ];
 write("tickers.json", STOCKS);
 
+// ---------- event taxonomy ----------
 type EventType = "Geopolitical" | "Macroeconomic" | "Credit Event" | "Merger/Acquisition" | "Product Launch" | "Earnings" | "Regulatory";
 type Pol = "pos" | "neg" | "neu";
 const BASE_IMPACT: Record<EventType, number> = {
@@ -48,6 +56,7 @@ const BASE_IMPACT: Record<EventType, number> = {
 };
 const COMPANY_EVENTS: EventType[] = ["Earnings", "Product Launch", "Merger/Acquisition", "Credit Event", "Regulatory"];
 
+// company-level headline templates
 const NEWS_CO: Record<string, Record<Pol, string[]>> = {
   Earnings: {
     pos: ["{co} beats quarterly earnings estimates and raises full-year guidance", "{co} posts record revenue as customer demand stays strong", "{co} profit surges past analyst forecasts on margin expansion"],
@@ -75,7 +84,7 @@ const NEWS_CO: Record<string, Record<Pol, string[]>> = {
     neu: ["{co} says it is cooperating with regulators on routine review", "Lawmakers to hold hearing on {co} industry practices"],
   },
 };
-
+// market-level headline templates (no single company)
 const NEWS_MKT: Record<"Geopolitical" | "Macroeconomic", Record<Pol, string[]>> = {
   Geopolitical: {
     neg: ["Escalating tensions in the Middle East push oil sharply higher and rattle equity markets", "New sanctions announced as regional conflict widens, global risk appetite weakens", "Trade war fears resurface after fresh tariff threats between major economies", "Cross-border military escalation sparks flight to safe-haven assets", "Shipping disruptions in a key maritime corridor raise supply chain concerns"],
@@ -95,7 +104,7 @@ const BODY: Record<Pol, string[]> = {
 };
 const PUBLISHERS = ["Synthetic Financial Wire", "Market Pulse (synthetic)", "Global Markets Daily (synthetic)"];
 
-
+// company-level tweet templates ({t} -> $TICKER or company name)
 const TW_CO: Record<string, Record<Pol, string[]>> = {
   Earnings: { pos: ["{t} crushed earnings 📈 guidance raised, bullish", "{t} numbers are insane, adding to my position 🚀"], neg: ["{t} earnings miss + guidance cut. ouch 📉", "dumping {t}, this quarter was awful"], neu: ["{t} reports earnings after the bell today", "waiting on {t} results, no position yet"] },
   "Product Launch": { pos: ["new {t} launch looks amazing, orders flying 🔥", "{t} just dropped something huge, bullish"], neg: ["{t} product delayed again... disappointing", "{t} launch is a flop imo, bearish"], neu: ["{t} event next month, anyone going?", "heard {t} has something coming up"] },
@@ -109,7 +118,7 @@ const TW_MKT: Record<"Geopolitical" | "Macroeconomic", Record<Pol, string[]>> = 
 };
 const TAGS = ["#stocks", "#investing", "#trading", "#markets", "#finance", ""];
 
-
+// ---------- helpers ----------
 const START = Date.parse("2026-09-01T00:00:00Z");
 const END = Date.parse("2026-09-30T23:59:00Z");
 const randTime = () => new Date(START + rand() * (END - START));
@@ -125,6 +134,7 @@ function gold(event: EventType, p: Pol) {
   return { gold_event: event, gold_sentiment: r2(sentiment), gold_impact: impact };
 }
 
+// ---------- news (2nd source #1) ----------
 type News = Record<string, unknown> & { id: string; published_at: string };
 const news: News[] = [];
 let nid = 1;
@@ -144,7 +154,7 @@ for (let i = 0; i < 90; i++) {
       headline: pick(NEWS_CO[event][p]).replace("{co}", s.name), body: pick(BODY[p]), tickers: [s.ticker], ...gold(event, p) });
   }
 }
-
+// syndicated duplicates (to exercise de-duplication in the ingestion step)
 for (const src of news.slice(0, 40).filter((_, i) => i % 10 === 0)) {
   news.push({ ...src, id: `N${String(nid++).padStart(3, "0")}`, publisher: pick(PUBLISHERS),
     published_at: new Date(Date.parse(src.published_at) + 1000 * 60 * Math.round(between(3, 40))).toISOString(), gold_duplicate_of: src.id });
@@ -152,7 +162,7 @@ for (const src of news.slice(0, 40).filter((_, i) => i % 10 === 0)) {
 news.sort((a, b) => a.published_at.localeCompare(b.published_at));
 write("news_sample.json", news);
 
-
+// ---------- tweets (2nd source #2) ----------
 const tweets: Record<string, unknown>[] = [];
 let tid = 1;
 for (let i = 0; i < 120; i++) {
@@ -176,7 +186,7 @@ for (let i = 0; i < 120; i++) {
 tweets.sort((a, b) => String(a.created_at).localeCompare(String(b.created_at)));
 write("tweets_sample.json", tweets);
 
-
+// ---------- synthetic wholesale-banking portfolio (Module B) ----------
 const RATING_PD: Record<string, number> = { AAA: 0.0005, AA: 0.002, A: 0.005, BBB: 0.015, BB: 0.04 };
 type Pos = Record<string, unknown>;
 const portfolio: Pos[] = [];
@@ -213,7 +223,7 @@ borrowers.forEach((b, i) => {
     market_value_usd_m: d.mv, duration_yrs: 0, rating: "A", pd: RATING_PD.A, lgd: 0.4, equity_beta: 0, dv01_usd_k: d.dv01 }));
 write("portfolio.json", portfolio);
 
-
+// ---------- stress-test shock library (Module B) ----------
 write("shocks.json", {
   _description: "Shocks at impact=10. Applied scaled by impact/10. Triggered only when impact_score > trigger.min_impact.",
   trigger: { min_impact: 7 },
@@ -222,7 +232,7 @@ write("shocks.json", {
     equity: "MV * (equity_pct/100) * beta",
     bond_and_loan: "MV * -(duration) * (rate_bps + credit_spread_bps)/10000  (government bonds: rate only)",
     loan_credit_loss: "extra expected loss = MV * lgd * (credit_spread_bps/10000) * 0.5",
-    derivative: "-dv01_usd_k/1000 * rate_bps (USD m); positive DV01 = pay-fixed",
+    derivative: "dMV (USD m) = +dv01_usd_k/1000 * rate_bps; positive DV01 = pay-fixed swap, which gains when rates rise (receive-fixed has negative DV01)",
   },
   event_shocks: {
     Geopolitical: { equity_pct: -15, rate_bps: -50, credit_spread_bps: 150 },
@@ -235,7 +245,7 @@ write("shocks.json", {
   },
 });
 
-
+// ---------- fallback prices (synthetic GBM) - used only if Yahoo fetch fails ----------
 const startPx: Record<string, number> = { AAPL: 230, MSFT: 440, GOOGL: 175, AMZN: 195, NVDA: 130, META: 560, TSLA: 250, JPM: 215, BAC: 42, GS: 520, XOM: 115, JNJ: 160, PFE: 28, WMT: 70, KO: 66 };
 const days: string[] = [];
 for (let d = Date.parse("2026-08-25T00:00:00Z"); d <= Date.parse("2026-09-30T00:00:00Z"); d += 86400000) {
@@ -250,7 +260,7 @@ for (const s of STOCKS) {
 }
 write("prices_fallback.csv", csv);
 
-
+// ---------- summary ----------
 const dist = (arr: Record<string, unknown>[]) => arr.reduce<Record<string, number>>((m, x) => ((m[String(x.gold_event)] = (m[String(x.gold_event)] || 0) + 1), m), {});
 console.log(`tickers: ${STOCKS.length} | news: ${news.length} | tweets: ${tweets.length} | portfolio positions: ${portfolio.length} | price rows: ${csv.split("\n").length - 2}`);
 console.log("news events:", dist(news));
