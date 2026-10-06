@@ -27,7 +27,7 @@ export default function EventsTable() {
           </select>
         </label>
       </div>
-      <p className="muted">Events scoring above 7 are what trigger Module B stress tests.</p>
+      <p className="muted">Adverse events scoring above 7 trigger Module B stress tests; favourable ones (positive sentiment) do not.</p>
       {error && <p className="error">{error}</p>}
       <div className="scroll">
         <table>

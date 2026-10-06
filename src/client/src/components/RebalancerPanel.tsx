@@ -4,7 +4,7 @@ import {
 } from 'recharts'
 import { DEFAULT_PARAMS, getJson } from '../api'
 import type { Params, RebalanceResult } from '../api'
-import { PALETTE, pct, scoreColor, shortDate, signed } from '../format'
+import { PALETTE, TIP, pct, scoreColor, shortDate, signed } from '../format'
 
 const CONTROLS: { key: keyof Params; label: string; min: number; max: number; step: number; help: string; fmt?: (v: number) => string }[] = [
   { key: 'tilt', label: 'Tilt strength', min: 0, max: 3, step: 0.1, help: 'How strongly sentiment moves weights (0 = equal weight)' },
@@ -57,7 +57,10 @@ export default function RebalancerPanel() {
   const day = hist[idx]
 
   const areaData = useMemo(
-    () => hist.map((h) => ({ date: shortDate(h.date), ...Object.fromEntries(Object.entries(h.weights).map(([t, w]) => [t, +(w * 100).toFixed(2)])) })),
+    () => hist.map((h) => {
+      const total = Object.values(h.weights).reduce((a, b) => a + b, 0) || 1
+      return { date: shortDate(h.date), ...Object.fromEntries(Object.entries(h.weights).map(([t, w]) => [t, +((w / total) * 100).toFixed(2)])) }
+    }),
     [hist],
   )
   const perfData = useMemo(() => (data?.performance ?? []).map((p) => ({ ...p, date: shortDate(p.date) })), [data])
@@ -109,8 +112,8 @@ export default function RebalancerPanel() {
               <AreaChart data={areaData} margin={{ top: 8, right: 12, bottom: 0, left: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
                 <XAxis dataKey="date" fontSize={12} />
-                <YAxis domain={[0, 100]} unit="%" fontSize={12} />
-                <Tooltip formatter={(v) => `${Number(v).toFixed(1)}%`} />
+                <YAxis domain={[0, 100]} allowDataOverflow tickFormatter={(v) => `${Math.round(Number(v))}%`} fontSize={12} />
+                <Tooltip {...TIP} formatter={(v) => `${Number(v).toFixed(1)}%`} />
                 {data.tickers.map((t, i) => (
                   <Area key={t} type="monotone" dataKey={t} stackId="w" stroke={PALETTE[i % PALETTE.length]} fill={PALETTE[i % PALETTE.length]} fillOpacity={0.75} />
                 ))}
@@ -127,7 +130,7 @@ export default function RebalancerPanel() {
                   <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
                   <XAxis dataKey="date" fontSize={12} />
                   <YAxis domain={['auto', 'auto']} fontSize={12} />
-                  <Tooltip />
+                  <Tooltip {...TIP} />
                   <Legend wrapperStyle={{ fontSize: 12 }} />
                   <Line type="monotone" dataKey="portfolio" name="Sentiment strategy" stroke="#4f46e5" dot={false} strokeWidth={2} />
                   <Line type="monotone" dataKey="equal_weight" name="Equal weight" stroke="#94a3b8" dot={false} strokeWidth={2} strokeDasharray="5 4" />
@@ -144,9 +147,9 @@ export default function RebalancerPanel() {
               <ResponsiveContainer width="100%" height={250}>
                 <BarChart data={dayBars} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
-                  <XAxis dataKey="ticker" fontSize={11} interval={0} />
+                  <XAxis dataKey="ticker" fontSize={10} interval={0} angle={-45} textAnchor="end" height={52} />
                   <YAxis unit="%" fontSize={12} />
-                  <Tooltip formatter={(v) => `${Number(v).toFixed(2)}%`} />
+                  <Tooltip {...TIP} formatter={(v) => `${Number(v).toFixed(2)}%`} />
                   <ReferenceLine y={equal} stroke="#64748b" strokeDasharray="4 4" label={{ value: 'equal weight', fontSize: 11, position: 'insideTopRight' }} />
                   <Bar dataKey="weight" name="Weight">
                     {dayBars.map((b) => <Cell key={b.ticker} fill={b.weight >= equal ? 'var(--pos)' : 'var(--neg)'} />)}

@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { EVENT_TYPES, getJson } from '../api'
 import type { StressResult, TriggerRow } from '../api'
-import { signed, timeLabel } from '../format'
+import { TIP, signed, timeLabel } from '../format'
 
 interface UniverseRow { ticker: string; name: string }
 type Mode = 'events' | 'scenario'
-const usd = (n: number, d = 1) => `$${n.toLocaleString(undefined, { minimumFractionDigits: d, maximumFractionDigits: d })}m`
+const usd = (n: number, d = 1) => `${n < 0 ? '-' : ''}$${Math.abs(n).toLocaleString(undefined, { minimumFractionDigits: d, maximumFractionDigits: d })}m`
 
 function useResult(url: string | null) {
   const [data, setData] = useState<StressResult | null>(null)
@@ -140,11 +140,11 @@ function Result({ r }: { r: StressResult }) {
         <section className="card">
           <h2>Portfolio value, before vs after</h2>
           <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={beforeAfter} margin={{ top: 16, right: 12, bottom: 0, left: 0 }}>
+            <BarChart data={beforeAfter} margin={{ top: 28, right: 12, bottom: 0, left: 0 }}>
               <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
               <XAxis dataKey="name" />
-              <YAxis unit="m" fontSize={12} />
-              <Tooltip formatter={(v) => usd(Number(v))} />
+              <YAxis unit="m" fontSize={12} domain={[0, (m: number) => Math.ceil(m * 1.12)]} />
+              <Tooltip {...TIP} formatter={(v) => usd(Number(v))} />
               <Bar dataKey="value" label={{ position: 'top', fontSize: 12, formatter: (v: unknown) => usd(Number(v), 0) }}>
                 <Cell fill="#64748b" />
                 <Cell fill={p.delta < 0 ? 'var(--neg)' : 'var(--pos)'} />
@@ -159,7 +159,7 @@ function Result({ r }: { r: StressResult }) {
               <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
               <XAxis type="number" fontSize={12} />
               <YAxis type="category" dataKey="name" fontSize={12} width={110} />
-              <Tooltip formatter={(v) => usd(Number(v))} />
+              <Tooltip {...TIP} formatter={(v) => usd(Number(v))} />
               <Bar dataKey="delta" name="Change">
                 {r.by_asset_type.map((b) => <Cell key={b.name} fill={b.delta < 0 ? 'var(--neg)' : 'var(--pos)'} />)}
               </Bar>
@@ -176,7 +176,7 @@ function Result({ r }: { r: StressResult }) {
             <CartesianGrid strokeDasharray="3 3" opacity={0.3} />
             <XAxis dataKey="name" fontSize={12} />
             <YAxis unit="m" fontSize={12} />
-            <Tooltip formatter={(v) => usd(Number(v))} />
+            <Tooltip {...TIP} formatter={(v) => usd(Number(v))} />
             <Legend wrapperStyle={{ fontSize: 12 }} />
             <Bar dataKey="before" name="Before" fill="#94a3b8" />
             <Bar dataKey="after" name="After" fill="#4f46e5" />

@@ -1,0 +1,35 @@
+digraph G {
+  rankdir=TB; splines=spline; nodesep=0.5; ranksep=0.5; pad=0.3; bgcolor="white";
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=11, margin="0.14,0.08", color="#cbd5e1", fillcolor="#f8fafc", fontcolor="#0f172a"];
+  edge [color="#64748b", arrowsize=0.7, fontname="DejaVu Sans", fontsize=9, fontcolor="#475569"];
+
+  subgraph cluster_src { label="1  Unstructured sources"; style="rounded,filled"; fillcolor="#eef2ff"; color="#c7d2fe"; fontname="DejaVu Sans Bold"; fontsize=12;
+    news [label="Financial news\n(sample JSON or NewsAPI live)"];
+    tw   [label="Tweets / X posts\n(synthetic sample JSON)"];
+    px   [label="Market prices\n(Yahoo Finance via yahoo-finance2)", fillcolor="#fff7ed", color="#fed7aa"];
+  }
+  subgraph cluster_ing { label="2  Ingestion"; style="rounded,filled"; fillcolor="#ecfeff"; color="#a5f3fc"; fontname="DejaVu Sans Bold"; fontsize=12;
+    ing [label="Clean text\nNormalize to one Doc schema\nEntity linking ($TICKER, names)\nNear-duplicate removal"];
+  }
+  subgraph cluster_nlp { label="3  AI/NLP Risk Engine (core)"; style="rounded,filled"; fillcolor="#f0fdf4"; color="#bbf7d0"; fontname="DejaVu Sans Bold"; fontsize=12;
+    sent [label="Sentiment score  -1..+1\nfinance lexicon + negation\n(optional FinBERT blend)"];
+    evt  [label="Event class (7 types)\nkeyword rules\n(optional zero-shot NLI fallback)"];
+    imp  [label="Impact score  1..10\nevent severity x sentiment strength"];
+  }
+  sig [label="Structured signals\nsignals.json  or  MongoDB", shape=cylinder, fillcolor="#fefce8", color="#fde68a"];
+  agg [label="Aggregation\ndaily sentiment per ticker\n(news 1.0 / tweet 0.4 weight)"];
+  api [label="Express REST API\n/signals  /sentiment  /events\n/analyze  /rebalance  /stress/*", fillcolor="#eef2ff", color="#a5b4fc"];
+
+  subgraph cluster_mod { label="4  Downstream modules"; style="rounded,filled"; fillcolor="#faf5ff"; color="#e9d5ff"; fontname="DejaVu Sans Bold"; fontsize=12;
+    A [label="Module A: tactical index rebalancer\nsentiment memory, tilt, weight caps,\nturnover limit, cost-aware backtest"];
+    B [label="Module B: strategic stress test\nimpact > 7 and adverse triggers shocks\non synthetic wholesale-banking book"];
+  }
+  ui [label="React dashboard\nlive analyzer | weights over time\nbefore / after stress", fillcolor="#eef2ff", color="#a5b4fc"];
+  book [label="Synthetic portfolio\n30 loans, bonds, equities, swaps", fillcolor="#fff7ed", color="#fed7aa"];
+
+  news -> ing; tw -> ing; ing -> sent; ing -> evt; sent -> imp; evt -> imp;
+  sent -> sig; evt -> sig; imp -> sig;
+  sig -> agg; sig -> api; agg -> api;
+  api -> A; api -> B; px -> A; book -> B;
+  A -> ui; B -> ui; api -> ui [style=dashed, label=" live analyze"];
+}

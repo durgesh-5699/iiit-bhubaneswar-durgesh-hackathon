@@ -64,3 +64,5 @@ input[type='range'] { width: 100%; accent-color: var(--primary); }
 tr.pick { cursor: pointer; } tr.pick:hover { background: color-mix(in srgb, var(--primary) 6%, transparent); }
 tr.pick.sel { background: color-mix(in srgb, var(--primary) 14%, transparent); }
 .kpi strong.neg { color: var(--neg); } .kpi strong.pos { color: var(--pos); }
+
+.scroll.tall thead th { position: sticky; top: 0; background: var(--card); z-index: 1; }
