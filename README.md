@@ -1,7 +1,7 @@
 # AI/NLP Risk Engine: Sentiment-Driven Index Rebalancing and Portfolio Stress Testing - S&P Global & Crisil Campus Hackathon
 
-**Candidate Name:** Durgesh Bhatt
-**College Email ID:** b423022@iiit-bh.ac.in
+**Candidate Name:** [Your Full Name]
+**College Email ID:** [your_id@iiit-bh.ac.in]
 **College / Campus:** IIIT Bhubaneswar
 **Demo Video Link:** [YouTube unlisted link]
 **Slide Deck Link (if hosted externally):** Not external, see [`docs/presentation.pdf`](docs/presentation.pdf)
@@ -43,6 +43,7 @@ All data lives in [`data/`](data/) and is either synthetic or public. No S&P Glo
 | `portfolio.json`, `shocks.json` | **Synthetic** wholesale-banking book (8 loans, 8 corporate bonds, 4 government bonds, 6 equities, 4 swaps and caps) and the event-type shock table. |
 | `prices.csv` | Daily closes from **Yahoo Finance** (`npm run fetch:prices`). |
 | `prices_fallback.csv` | Synthetic random-walk prices, used only if Yahoo is unreachable. |
+| `external/financial_phrasebank.csv` | **Not committed.** Public Financial PhraseBank (Kaggle: "Sentiment Analysis for Financial News", file `all-data.csv`), used only to evaluate sentiment. Download it yourself and save it under `data/external/` (see its own License.txt). |
 
 Assumptions:
 
@@ -81,6 +82,8 @@ Useful commands (run in `src/server`):
 | `npm run module-a` | Backtest summary for the rebalancer |
 | `npm run module-b` | Stress-test summary for every triggering event |
 | `npm run nlp:models` | Same as `nlp` plus FinBERT and zero-shot models (first run downloads them) |
+| `npm run eval:sentiment -- --limit 1000` | Compares lexicon, FinBERT, and blends on Financial PhraseBank (`-- --dev` uses the 34 hand-written items) |
+| `USE_MODELS=1 npm run dev` | Starts the API with the hybrid engine for `/api/analyze` (falls back to rules if models cannot load) |
 | `npm run ingest -- --live` | Adds live NewsAPI articles (needs `NEWSAPI_KEY` in `.env`) |
 | `npm run seed:mongo` | Loads signals into MongoDB (needs `MONGODB_URI`) |
 
@@ -107,14 +110,30 @@ curl "localhost:4000/api/stress/scenario?event_type=Geopolitical&impact=9"
 
 Reproduce the numbers below with `npm run nlp`, `npm run module-a`, and the dashboard.
 
-**NLP engine (rules-only mode, ground truth known).**
+**NLP engine.** One test set is not enough, so there are three. Reproduce with `npm run nlp`, `npm run nlp:models`, and `npm run eval:sentiment`.
 
-| Test set | Sentiment label accuracy | Event accuracy | Impact score |
+1) Synthetic sample, 210 documents with known labels:
+
+| Mode | Sentiment label accuracy | Event accuracy | Impact MAE |
 |---|---|---|---|
-| Synthetic sample (210 docs after de-duplication) | 99% (MAE 0.17) | 89% (majority-class baseline 18.6%) | MAE 0.6, 92% within 1 point |
-| Hand-written set (34 items) | 97% | 100% | n/a |
+| Rules only (lexicon + keyword rules) | 99% (MAE 0.17) | 89% | 0.60 |
+| Hybrid (FinBERT blend + zero-shot fallback) | 92.9% (MAE 0.19) | 91.9% | 0.86 |
 
-The synthetic set is generated from templates, so its numbers show the pipeline works but overstate real-world accuracy. The 34-item set was also used while tuning the lexicon, so it is a development set, not an independent test. Measuring on real labelled financial news is the first next step.
+The majority-class baseline for event type is 18.6%. This set is generated from templates, so it shows the pipeline works but overstates real-world accuracy.
+
+2) Sentiment on two other sets, chosen so each method is also tested where it was not tuned:
+
+| Method | 34 hand-written headlines and tweets | 1,000 Financial PhraseBank sentences |
+|---|---|---|
+| Lexicon | 97.1% | 62.6% |
+| FinBERT | 55.9% | 82.5% |
+| **Blend, 50/50 (hybrid mode)** | 76.5% | **85.6%** (macro-F1 0.85) |
+| Lexicon when it has evidence, else FinBERT | 88.2% | 76.5% |
+| Always-neutral baseline | 14.7% | 61.1% |
+
+How to read this honestly: the lexicon was tuned on the 34 items and never saw PhraseBank, so 62.6% is its real out-of-domain score, barely above the baseline, because it misses ordinary company-results wording such as "profit rose". FinBERT was trained on PhraseBank, so its 82.5% is optimistic, but it never saw the 34 items, and 55.9% there is its real score on macro headlines and tweets, where it misreads text such as "payrolls surge, unemployment falls" as negative. Each method is strong only in the domain it was built or trained for. The blend and the gated variant are the only configurations that stay above 75% on both sets; the blend is used because it is simpler and better on real news. PhraseBank is public data from Kaggle and is not redistributed here (see Dataset).
+
+Which mode is used where: the precomputed demo signals come from the rules-only mode, which scores highest on the template-generated data. The live analyzer in the dashboard uses the hybrid mode when the API starts with `USE_MODELS=1`, which is the better choice for real headlines.
 
 **Module A.** Positive sentiment raises a stock's weight and negative lowers it; weights are always within 2% to 15% and turnover stays under 10% per day. With real Yahoo prices and tilt 1.5, the strategy returned -0.62% against -0.18% for the equal-weight benchmark, with an information coefficient of -0.06 over 300 stock-days. That is the expected result: the news is synthetic and unrelated to real price moves, so the backtest validates the machinery (no look-ahead, cost and turnover control), not alpha.
 
@@ -126,7 +145,7 @@ The synthetic set is generated from templates, so its numbers show the pipeline 
 - *Traceability:* each signal lists the terms that drove it, which supports model-risk review.
 - *Actionability:* the same signal drives a tactical decision (rebalancing) and a strategic one (stress testing), which is the "unified engine" idea in the case study.
 
-**Limitations and next steps.** Lexicon and keyword rules are brittle on sarcasm and novel wording (FinBERT and zero-shot are wired in as an optional upgrade); the engine is batch plus on-demand rather than a streaming service; the backtest covers about one month; the stress model uses duration, beta, and DV01 approximations without convexity, netting, or collateral; shock sizes are not calibrated. Next steps: evaluate on real labelled news, add a streaming consumer, calibrate shocks to historical episodes, and add correlation-aware multi-event scenarios.
+**Limitations and next steps.** The lexicon is weak on ordinary company-results wording (62.6% on PhraseBank, barely above the always-neutral baseline) and FinBERT is weak on macro headlines and tweets (55.9%), so the hybrid blend is used for real text, and both are brittle on sarcasm and novel wording; the engine is batch plus on-demand rather than a streaming service; the backtest covers about one month; the stress model uses duration, beta, and DV01 approximations without convexity, netting, or collateral; shock sizes are not calibrated. Next steps: evaluate on real labelled news, add a streaming consumer, calibrate shocks to historical episodes, and add correlation-aware multi-event scenarios.
 
 ## Repository layout
 
