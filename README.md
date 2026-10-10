@@ -1,10 +1,10 @@
 # AI/NLP Risk Engine: Sentiment-Driven Index Rebalancing and Portfolio Stress Testing - S&P Global & Crisil Campus Hackathon
 
-**Candidate Name:** [Your Full Name]
-**College Email ID:** [your_id@iiit-bh.ac.in]
+**Candidate Name:** Durgesh Bhatt
+**College Email ID:** b423022@iiit-bh.ac.in
 **College / Campus:** IIIT Bhubaneswar
-**Demo Video Link:** [YouTube unlisted link]
-**Slide Deck Link (if hosted externally):** Not external, see [`docs/presentation.pdf`](docs/presentation.pdf)
+**Demo Video Link:** https://youtu.be/ChgVxg_UjuY
+**Slide Deck:** see [`docs/presentation.pdf`](docs/presentation.pdf)
 
 ## 1. Project Overview / Problem Statement & Approach
 
