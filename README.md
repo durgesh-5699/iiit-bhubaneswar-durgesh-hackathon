@@ -29,6 +29,7 @@ This prototype implements the core engine and **both** downstream modules:
 | Market data | `yahoo-finance2` (public data, no API key) |
 | Dashboard | React 19, Vite, Recharts |
 | Tests | Node test runner with `tsx` (41 server tests: engine, API, rebalancer, stress model) |
+| Packaging | Docker Compose: one command starts API and dashboard, optional MongoDB profile |
 
 Data flow: sources, ingestion, NLP engine, structured signals, daily aggregation, REST API, Module A and Module B, dashboard. Signals are plain JSON, so any other consumer can subscribe through the API or read the file.
 
@@ -72,6 +73,30 @@ cd src/client
 npm install
 npm run dev                     # http://localhost:5173
 ```
+
+### Option B: Run with Docker
+
+Needs Docker Desktop (or Docker Engine with the Compose plugin). One command builds and starts the API and the dashboard:
+
+```bash
+git clone https://github.com/durgesh-5699/iiit-bhubaneswar-durgesh-hackathon.git
+cd iiit-bhubaneswar-durgesh-hackathon
+docker compose up --build
+```
+
+- Dashboard: http://localhost:8080
+- API health check: http://localhost:4000/health
+- Stop everything: `docker compose down`
+
+The first build takes a few minutes. Signals are precomputed during the image build, so the API is ready as soon as it starts.
+
+| Option | Command |
+|---|---|
+| Hybrid engine (FinBERT + zero-shot) for the live analyzer | `USE_MODELS=1 docker compose up --build` (models download on first start and are cached in a volume) |
+| MongoDB instead of JSON files | `MONGODB_URI=mongodb://mongo:27017/risk_engine docker compose --profile mongo up --build`, then `docker compose exec api npm run seed:mongo` |
+| Real Yahoo prices | Already included: `data/prices.csv` is committed. To refresh it, run `npm run fetch:prices` in `src/server` before building |
+
+On Windows PowerShell, set variables first: `$env:USE_MODELS=1; docker compose up --build`.
 
 Useful commands (run in `src/server`):
 
